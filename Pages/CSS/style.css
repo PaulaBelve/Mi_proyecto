@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+}
+
+main {
+
+    margin: auto;
+
+    max-width: 1200px;
+}
+
+/* Estilos h2 */
+
+h2 {
+
+
+    color: cornflowerblue;
+
+    text-align: center;
+
+    font-size: 2em;
+
+
+    display: block 2px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    ;
+    margin-top: 20px;
+
+}
+
+/* Estilos h1 */
+
+h1 {
+    color: darkslategrey;
+
+    font-size: 1.5em;
+
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* Estilos parrafos */
+
+p {
+    font-size: 1em;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: darkslategrey;
+
+    margin-top: 50 px;
+
+
+}
+
+
+/* Estilos Header */
+
+.divHeader {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 2rem;
+
+
+}
+
+nav {
+
+    width: 50%;
+
+    height: auto;
+
+}
+
+
+.MENU {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    ;
+}
+
+li {
+
+    list-style: none;
+
+
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: grey;
+
+}
+
+
+/* CLASS */
+
+.Banner {
+
+    width: 100%;
+
+
+    margin-top: 30 px;
+
+
+}
+
+/* INICIO - TITULO ARTICULO Y PROPOSITO  */
+
+.proposito {
+
+
+
+    text-align: center;
+
+    font-size: 2em;
+
+    height: 20px;
+
+    padding: 30px;
+
+
+}
+
+.parrafo2 {
+
+    display: flex;
+
+    flex-direction: row;
+
+    font-size: 1.5em;
+
+    padding: 25px;
+
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    gap: 3rem;
+}
+
+/* ESTILOS CARD */
+.card {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 5rem;
+
+    justify-content: space-between;
+
+    padding: 30px;
+
+    margin-left: 5rem;
+
+    height: 20%;
+
+    font-size: 1.5em
+}
+
+.divBox {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+
+}
+
+.boxReceta__img {
+
+    gap: 5rem;
+
+}
+
+.boxReceta__info {
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-direction: column;
+
+    padding: 25px;
+
+
+
+
+}
+
+.boxReceta__subtitle {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: darkslategrey;
+
+
+
+}
+
+
+/* ID */
+
+#Formulario {
+
+    margin-bottom: 10%;
+
+    padding: 10%;
+
+}
+
+#menuFooter {
+
+    margin: 10%;
+
+
+
+
+}
+
+#infoFooter {
+
+    margin: 10%
+}
+
+#parrafoProp {
+
+    font-size: 1.5em;
+
+    text-align: justify;
+
+    padding: 5%;
+}
+
+/* Estilos UL */
+
+ul {
+    color: rgb(53, 51, 51);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Estilos footer */
+
+Footer {
+
+    background-image: url(../IMG/hojitas.png);
+
+    color: darkslategrey;
+
+    font-size: 1.5em;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+}
+
+footer a {
+
+    font-size: 1em;
+}
+
+@media screen and (max-width: 480px) {
+
+    .divHeader a {
+
+        font-size: 1em;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    footer {
+        flex-direction: column;
+
+    }
+
+    .card {
+
+        flex-direction: column;
+
+        margin: 50px;
+
+        padding: 50px;
+
+    }
+
+    .parrafo2 {
+
+        flex-direction: column;
+    }
+}
