@@ -154,7 +154,7 @@ a:hover {
       width: 100%;
 
 
-    margin-top: 40px;
+      margin-top: 40px;
 
 
 }
@@ -276,6 +276,11 @@ a:hover {
 
 
 
+}
+
+.boxReceta__link {
+
+    font-size: 1em;
 }
 
 /* ANIMACIONES CARD */
