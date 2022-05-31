@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -99,6 +100,9 @@ nav {
 }
 
 
+
+
+
 .MENU {
 
     display: flex;
@@ -121,28 +125,56 @@ li {
 a {
     text-decoration: none;
     font-size: 1.5em;
+    border:solid color white ;
     color: grey;
+    transition: all .3s linear;
 
 }
 
+/*ANIMACIONES HEADER*/
 
-/* CLASS */
+a:hover {
+
+    border-bottom: 1px solid violet ;
+
+
+ }
+
+/*FIN ESTILOS HEADER*/
+
+/* CLASS BANNER */
 
 .Banner {
 
-    width: 100%;
+    position: relative;
+}
+
+.Banner img {
+
+      width: 100%;
 
 
-    margin-top: 30 px;
+    margin-top: 40px;
 
 
 }
 
-/* INICIO - TITULO ARTICULO Y PROPOSITO  */
+.bannerInicio { 
+    
+    position: absolute;
+    top: 50px;
+    left: 35%;
+    margin-top: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: xx-large;
+
+}
+
+
+/* ESTILOS INICIO - TITULO ARTICULO Y PROPOSITO  */
 
 .proposito {
-
-
 
     text-align: center;
 
@@ -171,6 +203,18 @@ a {
 
     gap: 3rem;
 }
+
+#parrafoProp {
+
+    font-size: 1.5em;
+
+    text-align: justify;
+
+    padding: 5%;
+
+}
+
+
 
 /* ESTILOS CARD */
 .card {
@@ -234,8 +278,24 @@ a {
 
 }
 
+/* ANIMACIONES CARD */
 
-/* ID */
+.imgBox {
+
+    transition: all 0.3s linear;
+
+    
+}
+
+.imgBox:hover {
+
+    transform: scale(1.1, 1.1)
+     ;
+     box-shadow: 0px 0px 10px cadetblue;
+}
+
+
+/* ESTILOS CONTACTO */
 
 #Formulario {
 
@@ -245,28 +305,7 @@ a {
 
 }
 
-#menuFooter {
 
-    margin: 10%;
-
-
-
-
-}
-
-#infoFooter {
-
-    margin: 10%
-}
-
-#parrafoProp {
-
-    font-size: 1.5em;
-
-    text-align: justify;
-
-    padding: 5%;
-}
 
 /* Estilos UL */
 
@@ -274,10 +313,19 @@ ul {
     color: rgb(53, 51, 51);
 
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 /* Estilos footer */
+
+#menuFooter {
+
+    margin: 10%;
+}
+
+#infoFooter {
+
+    margin: 10%
+}
 
 Footer {
 
@@ -299,6 +347,8 @@ footer a {
 
     font-size: 1em;
 }
+
+/* FIN ESTILOS FOOTER */
 
 @media screen and (max-width: 480px) {
 
