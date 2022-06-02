@@ -1,10 +1,15 @@
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 
+} */
+
+img {
+
+    width: 100%;
 }
 
 html {
@@ -20,24 +25,22 @@ body {
 
 }
 
-main {
+/*main {
 
-    margin: auto;
+     margin: auto;
 
-    max-width: 1200px;
-}
+   max-width: 1200px; }*/
+
 
 /* Estilos h2 */
 
-h2 {
-
-
+.h2, h2, h2 , h2  {
+   
     color: cornflowerblue;
 
     text-align: center;
 
     font-size: 2em;
-
 
     display: block 2px;
 
@@ -48,9 +51,10 @@ h2 {
 
 }
 
+
 /* Estilos h1 */
 
-h1 {
+.h1, h1 {
     color: darkslategrey;
 
     font-size: 1.5em;
@@ -72,6 +76,31 @@ p {
 
 
 }
+
+/* CLASES BOOSTRAP */
+
+.box img{
+
+    width: 100%;
+    
+
+}
+
+
+.card2  { 
+
+    width: 50% ;
+
+    margin: 25%;
+
+    margin-top: 5%;
+
+  }
+
+  h4 {
+
+    color: purple;
+  }
 
 
 /* Estilos Header */
@@ -99,10 +128,6 @@ nav {
 
 }
 
-
-
-
-
 .MENU {
 
     display: flex;
@@ -117,12 +142,9 @@ nav {
 li {
 
     list-style: none;
-
-
-
 }
 
-a {
+li>a {
     text-decoration: none;
     font-size: 1.5em;
     border:solid color white ;
@@ -133,12 +155,11 @@ a {
 
 /*ANIMACIONES HEADER*/
 
-a:hover {
+li>a:hover {
 
     border-bottom: 1px solid violet ;
 
-
- }
+}
 
 /*FIN ESTILOS HEADER*/
 
@@ -217,24 +238,31 @@ a:hover {
 
 
 /* ESTILOS CARD */
+
 .card {
 
     display: flex;
 
     flex-direction: row;
 
-    gap: 5rem;
+    gap: 4rem;
 
-    justify-content: space-between;
+    justify-content: center;
 
-    padding: 30px;
+    border: none;
 
-    margin-left: 5rem;
+    
 
-    height: 20%;
+    padding-left: 7em;
+
+    margin-top: 10%;
+
+    height: 100%;
 
     font-size: 1.5em
 }
+
+
 
 .divBox {
 
@@ -244,12 +272,16 @@ a:hover {
 
     gap: 1rem;
 
+    font-size: 1em;
+
 
 }
 
 .boxReceta__img {
 
     gap: 5rem;
+
+    width: 50%;
 
 }
 
@@ -280,8 +312,16 @@ a:hover {
 
 .boxReceta__link {
 
+    color: purple;
+
+    text-decoration: none;
+
     font-size: 1em;
 }
+
+/*a {
+    color: var(--bs-link-color);
+    text-decoration: underline; } */
 
 /* ANIMACIONES CARD */
 
@@ -304,9 +344,13 @@ a:hover {
 
 #Formulario {
 
+    width: 30%;
+
+    border: solid 2px cornflowerblue;
+   
     margin-bottom: 10%;
 
-    padding: 10%;
+    padding: 5%;
 
 }
 
@@ -325,7 +369,9 @@ ul {
 #menuFooter {
 
     margin: 10%;
+    
 }
+
 
 #infoFooter {
 
@@ -338,7 +384,9 @@ Footer {
 
     color: darkslategrey;
 
-    font-size: 1.5em;
+    font-size: 1em;
+
+    margin-top: 10%;
 
     display: flex;
 
@@ -348,7 +396,7 @@ Footer {
 
 }
 
-footer a {
+footer li a{
 
     font-size: 1em;
 }
@@ -357,30 +405,58 @@ footer a {
 
 @media screen and (max-width: 480px) {
 
-    .divHeader a {
+    .divHeader li a {
 
-        font-size: 1em;
-        margin: 0%;
-        padding: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5em;
+            font-size: 1em;
+        }
+
+        
+    footer {
+
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: center;
+
     }
 
-    footer {
-        flex-direction: column;
+    .bannerInicio {
 
+        
+        left: 20%;
+
+        margin-top: 7%;
+
+        font-size: medium;
+    }
+
+    .Banner img {
+
+        width: 100%;
     }
 
     .card {
 
         flex-direction: column;
 
-        margin: 50px;
+        justify-content: center;
 
-        padding: 50px;
+        } 
 
-    }
+    
 
-    .parrafo2 {
+   /* .boxReceta__info {
 
         flex-direction: column;
-    }
+        justify-content: center;
+    } */
+
+  /*  .parrafo2 {
+
+        flex-direction: column;
+    } */
 }

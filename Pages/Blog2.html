@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog2</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+
+      <!-- Boostrap via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+    <link rel="stylesheet" href="../CSS/style.css">
+   
 <body>
    
     <!-- HEADER DE LA PAGINA -->
@@ -41,13 +46,52 @@
 
    <!-- MAIN --> 
 
-   <main>
+   <main class="container">
 
-    <h2 class="proposito">ARTICULOS</h2>
+    <h2>ARTICULOS</h2>
 
-    <P id="parrafoProp" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eligendi sunt placeat sit voluptatibus, accusamus deserunt perferendis velit iusto nihil, voluptas architecto ratione, impedit provident? Aut dicta culpa fugiat iusto.</P>
+    <P id="parrafoProp" class=".Lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eligendi sunt placeat sit voluptatibus, accusamus deserunt perferendis velit iusto nihil, voluptas architecto ratione, impedit provident? Aut dicta culpa fugiat iusto.</P>
 
-
+    <section class="cardBlog row row-cols-1 row-cols-md-2 g-0.1
+    .img-fluid">
+        
+        <div class="col-md-6">
+          <div class="card2">
+            <img src="../IMG/pexels-malik-skydsgaard-12132204.jpg" class= "card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mt-3">Alimentacion consciente</h4>
+              <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card2">
+            <img src="../IMG/Sonrisa.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mt-3">¿Cómo nos sentimos cuándo comemos?</h4>
+              <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card2">
+            <img src="../IMG/GranolaVolando.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mt-3">Motivación a la hora de cocinar</h4>
+              <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card2">
+            <img src="../IMG/Muffins.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mt-3">Cocinar de forma equilibrada</h4>
+              <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+    </section>
 
 
 </main>
@@ -85,6 +129,11 @@
     </footer>
 
         <!-- FIN DEL FOOTER -->
+
+           <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
     
 </body>
 </html>
