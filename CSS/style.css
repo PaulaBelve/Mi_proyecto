@@ -1,11 +1,10 @@
-
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 
-} */
+}
 
 img {
 
@@ -34,8 +33,11 @@ body {
 
 /* Estilos h2 */
 
-.h2, h2, h2 , h2  {
-   
+.h2,
+h2,
+h2,
+h2 {
+
     color: cornflowerblue;
 
     text-align: center;
@@ -54,13 +56,31 @@ body {
 
 /* Estilos h1 */
 
-.h1, h1 {
+.h1,
+h1 {
     color: darkslategrey;
 
     font-size: 1.5em;
 
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* ESTILOS h4 */
+
+h4 {
+
+    color: purple;
+}
+
+
+/*Estilos h5*/
+
+.h5,
+h5 {
+
+    color: purple;
+    font-size: 1.25em;
 }
 
 /* Estilos parrafos */
@@ -77,35 +97,21 @@ p {
 
 }
 
-/* CLASES BOOSTRAP */
+/* Estilos UL */
 
-.box img{
+ul {
+    color: rgb(53, 51, 51);
 
-    width: 100%;
-    
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.card2  { 
-
-    width: 50% ;
-
-    margin: 25%;
-
-    margin-top: 5%;
-
-  }
-
-  h4 {
-
-    color: purple;
-  }
-
-
-/* Estilos Header */
+/* ESTILOS Y ANIMACIONES HEADER */
 
 .divHeader {
+
+    height: 80px;
+
+    width: 100%;
 
     display: flex;
 
@@ -113,57 +119,72 @@ p {
 
     justify-content: flex-end;
 
-    align-items: center;
-
-    padding: 2rem;
 
 
 }
 
-nav {
+.navHeader {
 
-    width: 50%;
+    display: flex;
 
-    height: auto;
+    justify-content: space-between;
 
+    max-width: 992px;
+
+
+
+}
+
+.navBoton {
+
+    color: purple;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
 }
 
 .MENU {
 
     display: flex;
 
-    flex-direction: row;
+    margin-left: 170px;
 
-    justify-content: space-around;
-
-    ;
-}
-
-li {
+    padding: 2rem;
 
     list-style: none;
+
+
 }
 
-li>a {
-    text-decoration: none;
+
+.menu__item {
+
     font-size: 1.5em;
-    border:solid color white ;
+    margin: 0 10px;
+}
+
+
+.menu__item>.menu__link {
+
+    text-decoration: none;
     color: grey;
     transition: all .3s linear;
 
 }
 
-/*ANIMACIONES HEADER*/
 
-li>a:hover {
+.menu__item>.menu__link:hover {
 
-    border-bottom: 1px solid violet ;
+    border-bottom: 1px solid violet;
 
 }
 
-/*FIN ESTILOS HEADER*/
 
-/* CLASS BANNER */
+/* ESTILOS BANNER */
 
 .Banner {
 
@@ -172,22 +193,22 @@ li>a:hover {
 
 .Banner img {
 
-      width: 100%;
+    width: 100%;
 
 
-      margin-top: 40px;
+    margin-top: 40px;
 
 
 }
 
-.bannerInicio { 
-    
+.bannerInicio {
+
     position: absolute;
-    top: 50px;
-    left: 35%;
+    top: 25px;
+    left: 30%;
     margin-top: 15%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
+    color: white;
     font-size: xx-large;
 
 }
@@ -235,9 +256,81 @@ li>a:hover {
 
 }
 
+/* ESTILOS Y ANIMACIONES ROW */
+
+.row {
+
+    gap: 25px;
+    margin-top: 25px;
+
+}
 
 
-/* ESTILOS CARD */
+
+.row>.box {
+
+    height: 25%;
+
+    border: solid 2px grey;
+
+    width: 20%;
+
+
+}
+
+.row>.box img {
+
+    gap: 2em;
+
+    margin-top: 2%;
+
+    width: 100%;
+
+
+}
+
+.box {
+
+    transition: all 0.3s linear;
+}
+
+.box:hover {
+
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 10px cadetblue;
+
+
+}
+
+/* ESTILOS BLOG */
+.card2 {
+
+    width: 50%;
+
+    margin: 25%;
+
+    margin-top: 5%;
+
+}
+
+
+.card2 {
+
+    transition: all 0.3s linear;
+}
+
+.card2:hover {
+
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 10px cadetblue;
+
+
+}
+
+
+/* ENLACE RECETAS DULCES Y SALADAS */
+
+/* ESTILOS Y ANIMACIONES CARD */
 
 .card {
 
@@ -251,9 +344,9 @@ li>a:hover {
 
     border: none;
 
-    
+    margin: 0.1em;
 
-    padding-left: 7em;
+    padding-left: 1em;
 
     margin-top: 10%;
 
@@ -274,14 +367,14 @@ li>a:hover {
 
     font-size: 1em;
 
+    width: 25%;
+
 
 }
 
 .boxReceta__img {
 
-    gap: 5rem;
-
-    width: 50%;
+    gap: 8rem;
 
 }
 
@@ -304,7 +397,7 @@ li>a:hover {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    color: darkslategrey;
+    color: purple;
 
 
 
@@ -319,24 +412,28 @@ li>a:hover {
     font-size: 1em;
 }
 
+.boxReceta__item {
+
+    text-decoration: none;
+    font-size: 1em;
+    color: darkslategrey;
+}
+
 /*a {
     color: var(--bs-link-color);
     text-decoration: underline; } */
-
-/* ANIMACIONES CARD */
 
 .imgBox {
 
     transition: all 0.3s linear;
 
-    
+
 }
 
 .imgBox:hover {
 
-    transform: scale(1.1, 1.1)
-     ;
-     box-shadow: 0px 0px 10px cadetblue;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 10px cadetblue;
 }
 
 
@@ -347,31 +444,14 @@ li>a:hover {
     width: 30%;
 
     border: solid 2px cornflowerblue;
-   
+
     margin-bottom: 10%;
 
     padding: 5%;
 
 }
 
-
-
-/* Estilos UL */
-
-ul {
-    color: rgb(53, 51, 51);
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Estilos footer */
-
-#menuFooter {
-
-    margin: 10%;
-    
-}
-
 
 #infoFooter {
 
@@ -396,67 +476,171 @@ Footer {
 
 }
 
-footer li a{
+.footer__menu {
 
-    font-size: 1em;
+    list-style: none;
+
+
+
+}
+
+footer nav {
+
+    margin-top: 45%;
+
+}
+
+footer li a {
+
+    text-decoration: none;
+
+    color: darkslategrey;
+
+
+    font-size: 1.5em;
 }
 
 /* FIN ESTILOS FOOTER */
 
 @media screen and (max-width: 480px) {
 
-    .divHeader li a {
+    /*INDEX*/
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 5em;
-            font-size: 1em;
-        }
+    /*HEADER GENERAL */
 
-        
-    footer {
+    .divHeader {
 
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
+        height: 50px;
+
+        width: 100%;
 
     }
+
+
+    .MENU {
+
+        display: flex;
+
+        align-items: center;
+
+
+    }
+
 
     .bannerInicio {
 
-        
-        left: 20%;
+
+        left: 5%;
 
         margin-top: 7%;
 
-        font-size: medium;
+        font-size: large;
     }
 
-    .Banner img {
+    /* .Banner img {
 
         width: 100%;
+    } */
+
+    /*  .parrafo2 {
+
+        flex-direction: column;
+    } */
+
+    .row>.box img {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
     }
 
-    .card {
+    /* RECETAS */
+
+    .divBox {
 
         flex-direction: column;
 
         justify-content: center;
 
-        } 
+        width: 100%;
 
+    }
+
+    /* .boxReceta__info {
+
+        flex-direction: column;
+        justify-content: center;
+    } */
+
+    /* FOOTER */
+
+    footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30%;
+
+
+
+    }
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 768px) {
+
+        /*  .divHeader {
+
+        height: 60px;
+
+    }
+
+    .MENU {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
     
+        margin-right: 20px;
+    
+        position:fixed;
+        
+        left: 0;
 
-   /* .boxReceta__info {
+        top: 60px;
 
-        flex-direction: column;
-        justify-content: center;
+        padding: 60px 0;
+
+        width: 100%;
+    
+        list-style: none;
+    
+        
+    }
+
+    .menu__item {
+
+       line-height: 70px;
     } */
 
-  /*  .parrafo2 {
 
-        flex-direction: column;
-    } */
+        .bannerInicio {
+
+            top: 12px;
+            left: 16%;
+            margin-top: 9%;
+
+            font-size: x-large;
+        }
+
+    }
+
 }

@@ -15,42 +15,51 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/3beba61247.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- HEADER DE LA PAGINA -->
-    <h1> Agregue Boostrap </h1>
+    <h1> Segunda entrega del proyecto </h1>
     <!-- fila del logo + enlaces -->
 
     <header>
-            <div class="divHeader">
+        <div class="divHeader">
             <nav class="navHeader">
+                <button class="navBoton">
+                    <i class="fas fa-bars"></i>
+                </button>
 
 
                 <ul class="MENU">
 
                     <li class="menu__item">
-                        
-                        <a class="menu__link" href="./index.html">Inicio</a></li>
+
+                        <a class="menu__link" href="./index.html">Inicio</a>
+                    </li>
 
                     <li class="menu__item">
-                        <a class="menu__link" href="./Pages/Blog2.html">Blog</a></li>
+                        <a class="menu__link" href="./Pages/Blog2.html">Blog</a>
+                    </li>
 
                     <li class="menu__item">
-                        <a class="menu__link" href="./Pages/RecetasDul3.html">Recetas dulces</a></li>
+                        <a class="menu__link" href="./Pages/RecetasDul3.html">Recetas dulces</a>
+                    </li>
 
                     <li class="menu__item">
-                        <a class="menu__link" href="./Pages/RecetasSal4.html">Recetas saladas</a></li>
+                        <a class="menu__link" href="./Pages/RecetasSal4.html">Recetas saladas</a>
+                    </li>
 
                     <li class="menu__item">
-                        <a class="menu__link" href="./Pages/Contacto5.html">Contacto</a></li>
+                        <a class="menu__link" href="./Pages/Contacto5.html">Contacto</a>
+                    </li>
 
 
                 </ul>
             </nav>
-        </div> 
-        
-       <!-- <section class="divHeader">
+        </div>
+
+        <!-- <section class="divHeader">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,8 +87,8 @@
             </div>
           </nav>
           </section> -->
-        
-          <!-- BANNER -->
+
+        <!-- BANNER -->
 
         <div class="Banner">
             <img src="./IMG/BanerCielo.png" alt="">
@@ -98,7 +107,7 @@
 
             <h1 class="proposito"><b>PRÓPOSITO</h1></b>
 
-            <p id="parrafoProp" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores voluptas
+            <p id="parrafoProp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores voluptas
                 adipisci fuga, beatae, quibusdam suscipit, omnis pariatur obcaecati at culpa sed error dolorum nam natus
                 labore vel incidunt rem.</p>
 
@@ -118,28 +127,37 @@
 
         <!-- Enlace directo a las recetas -->
 
-        
+
         <div class="row justify-content-center">
-            
-                <article class="box col-md-3">
+
+
+            <article class="box col-md-3">
+
                 <picture class="box__img">
-                    <img  src="./IMG/Rectangle 1.png" alt="">
+                    <a href="./Pages/RecetasDul3.html">
+
+                        <img class="card-img-top" src="./IMG/tarteletita dulce.jpeg" alt="">
+
+                    </a>
                 </picture>
                 <h5 class="box__subtitle mt-3">Recetas dulces</h5>
 
 
             </article>
 
-         
-                <article class="box col-md-3">
-                    <picture class="box__img">
-                        <img src="./IMG/Rectangle 1.png" alt="">
-                    </picture>
-                    <h5 class="box__subtitle mt-3">Recetas saladas</h5>
-    
-    
-                </article>
-    
+
+            <article class="box col-md-3">
+
+                <picture class="box__img">
+                    <a href="./Pages/RecetasSal4.html">
+                        <img class="card-img-top" src="./IMG/Tostones 2.jpeg" alt="">
+                    </a>
+                </picture>
+                <h5 class="box__subtitle mt-3">Recetas saladas</h5>
+
+
+            </article>
+
         </div>
 
 
@@ -149,21 +167,19 @@
 
     <footer>
 
-        <section id="menuFooter">
-
-            <b> MENU </b>
+        <section>
             <nav>
-                <ul>
+                <ul class="footer__menu">
 
-                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
 
-                    <li><a href="./Pages/Blog2.html">Blog</a></li>
+                    <li><a href="./Blog2.html">Blog</a></li>
 
-                    <li><a href="./Pages/RecetasDul3.html">Recetas dulces</a></li>
+                    <li><a href="./RecetasDul3.html">Recetas dulces</a></li>
 
-                    <li><a href="./Pages/RecetasSal4.html">Recetas saladas</a></li>
+                    <li><a href="./RecetasSal4.html">Recetas saladas</a></li>
 
-                    <li><a href="./Pages/Contacto5.html">Contacto</a></li>
+                    <li><a href="./Contacto5.html">Contacto</a></li>
                 </ul>
             </nav>
         </section>
@@ -175,11 +191,11 @@
 
         </div>
 
-
-
     </footer>
 
+
     <!-- FIN DEL FOOTER -->
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
