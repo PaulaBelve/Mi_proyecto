@@ -512,10 +512,30 @@ footer li a {
 
         height: 50px;
 
-        width: 100%;
+        
 
     }
 
+    .navHeader {
+
+        display: flex;
+    
+        justify-content: center;
+
+        padding: 0 20px;
+    
+        
+    
+    
+    
+    }
+
+    .menu__item {
+
+        font-size: 1em;
+        margin: 0 7px;
+        gap: 2%;
+    }
 
     .MENU {
 
@@ -585,13 +605,6 @@ footer li a {
 
 
     }
-
-
-
-
-
-
-
 
     @media screen and (max-width: 768px) {
 
