@@ -1,0 +1,19 @@
+/* Externos */
+
+/* Misc */
+@import './misc/Variables.scss' ;
+@import './misc/Normalize' ;
+@import './misc/Animations' ;
+
+/* Partials */
+@import './Partials/Header';
+@import './Partials/Footer' ;
+
+/* Views */
+@import './Views/inicio' ;
+@import './Views/Blog' ;
+@import './Views/Recetasdul' ;
+@import './Views/Recetassal' ;
+@import './Views/Contacto' ;
+
+

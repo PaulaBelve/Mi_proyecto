@@ -1,3 +1,6 @@
+
+/*
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +34,7 @@ body {
    max-width: 1200px; }*/
 
 
-/* Estilos h2 */
+/* Estilos h2 
 
 .h2,
 h2,
@@ -51,10 +54,10 @@ h2 {
     ;
     margin-top: 20px;
 
-}
+} */
 
 
-/* Estilos h1 */
+/* Estilos h1 
 
 .h1,
 h1 {
@@ -64,26 +67,26 @@ h1 {
 
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
+} */
 
-/* ESTILOS h4 */
+/* ESTILOS h4 
 
 h4 {
 
     color: purple;
-}
+} */
 
 
-/*Estilos h5*/
+/*Estilos h5 
 
 .h5,
 h5 {
 
     color: purple;
     font-size: 1.25em;
-}
+} */
 
-/* Estilos parrafos */
+/* Estilos parrafos 
 
 p {
     font-size: 1em;
@@ -95,17 +98,17 @@ p {
     margin-top: 50 px;
 
 
-}
+} */
 
-/* Estilos UL */
+/* Estilos UL 
 
 ul {
     color: rgb(53, 51, 51);
 
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
-/* ESTILOS Y ANIMACIONES HEADER */
+/* ESTILOS Y ANIMACIONES HEADER 
 
 .divHeader {
 
@@ -181,17 +184,17 @@ ul {
 
     border-bottom: 1px solid violet;
 
-}
+} */
 
 
-/* ESTILOS BANNER */
+/* ESTILOS BANNER 
 
 .Banner {
 
     position: relative;
 }
 
-.Banner img {
+.Banner__img {
 
     width: 100%;
 
@@ -201,7 +204,7 @@ ul {
 
 }
 
-.bannerInicio {
+.Banner__Inicio {
 
     position: absolute;
     top: 25px;
@@ -211,10 +214,10 @@ ul {
     color: white;
     font-size: xx-large;
 
-}
+} */
 
 
-/* ESTILOS INICIO - TITULO ARTICULO Y PROPOSITO  */
+/* ESTILOS INICIO - TITULO ARTICULO Y PROPOSITO  
 
 .proposito {
 
@@ -254,9 +257,9 @@ ul {
 
     padding: 5%;
 
-}
+} */
 
-/* ESTILOS Y ANIMACIONES ROW */
+/* ESTILOS Y ANIMACIONES ROW 
 
 .row {
 
@@ -300,7 +303,7 @@ ul {
     box-shadow: 0px 0px 10px cadetblue;
 
 
-}
+} */
 
 /* ESTILOS BLOG */
 .card2 {
@@ -453,12 +456,12 @@ ul {
 
 /* Estilos footer */
 
-#infoFooter {
+.footer__info {
 
     margin: 10%
 }
 
-Footer {
+.footer {
 
     background-image: url(../IMG/hojitas.png);
 
@@ -484,18 +487,17 @@ Footer {
 
 }
 
-footer nav {
+.footer__nav {
 
     margin-top: 45%;
 
 }
 
-footer li a {
+.footer__item>.footer__link {
 
     text-decoration: none;
 
     color: darkslategrey;
-
 
     font-size: 1.5em;
 }
@@ -567,13 +569,7 @@ footer li a {
         flex-direction: column;
     } */
 
-    .row>.box img {
-
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-    }
+    
 
     /* RECETAS */
 
@@ -595,7 +591,7 @@ footer li a {
 
     /* FOOTER */
 
-    footer {
+    .footer {
 
         display: flex;
         flex-direction: column;

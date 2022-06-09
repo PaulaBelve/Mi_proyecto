@@ -1,0 +1,80 @@
+
+/* Footer */
+
+.footer {
+
+
+     background-image: url(../IMG/hojitas.png);
+
+    color: $text;
+
+     margin-top: 10%;
+
+     gap: 1em;
+
+    
+& .footer__nav {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    margin: 20%;
+
+    margin-top: 10%; } 
+
+  & .footer__info {
+
+        font-size: $text-Base;
+
+        margin-right: 20% ; 
+        
+        }
+}
+
+.menuFooter {
+
+    list-style: none;
+
+
+& .footer__item {
+    
+    text-decoration: none;
+
+    color: $ul;
+
+    font-size: $text-Base;
+
+}
+
+& .footer__link {
+
+    text-decoration: none;
+
+    color: $ul;
+
+    font-size: 1em;
+
+
+}
+
+
+} 
+
+/* Media query */
+
+@media screen and (max-width: 480px) {
+
+.footer {
+
+
+  & .footer__nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30%; }
+
+} }
