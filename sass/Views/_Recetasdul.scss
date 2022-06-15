@@ -1,16 +1,20 @@
-/* Card recetas */
+
+
+/* Card recetas dulces */
 
 .card {
 
-    display: flex;
+    @include flex (row, center, center, 4rem) ;
+
+    flex-wrap: wrap;
+
+   /* display: flex;
 
     flex-direction: row;
 
     gap: 4rem;
 
-    justify-content: center;
-
-    border: none;
+    justify-content: center; */
 
     margin: 0.1em;
 
@@ -20,24 +24,26 @@
 
     height: 100%;
 
-    font-size: 1.5em ;
+    font-size: 1.5em ; 
 
     .divBox {
 
-        display: flex;
+        @include flex (column, center, center, 1rem) ;
+
+       /* display: flex;
     
         flex-direction: column;
     
-        gap: 1rem;
+        gap: 1rem; */
     
-        font-size: 1em;
+        font-size: $text-Small;
     
-        width: 25%;
-    
-    
-    }
+        width: 25%; }
 
-    .boxReceta__info {
+        .boxReceta {
+
+
+        &__info {
 
         display: flex;
 
@@ -45,7 +51,7 @@
     
         flex-direction: column;
     
-        padding: 25px;
+        padding: 25px; }
 
         &__img {
 
@@ -53,34 +59,37 @@
     
     &__subtitle {
 
-        font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-Principal;
 
-    color: purple;
+    color: map-get($colors, secondary);
 
+    &--budines {
+        
+        @extend .boxReceta__subtitle;
+        border: solid 1px purple;
+    }
 
     }
 
     &__link {
 
-        color: purple;
+    color: map-get($colors, secondary );
 
     text-decoration: none;
 
-    font-size: 1em;
+    font-size: $text-Small;
 
 
     }
 
     &__item {
 
-        text-decoration: none;
-    font-size: 1em;
-    color: darkslategrey;
-
-
+    text-decoration: none;
+    font-size: $text-Small;
+    color: map-get($colors, text);
     }
 
-    }
+    } } 
 
     .imgBox {
 
@@ -95,5 +104,55 @@
         box-shadow: 0px 0px 10px cadetblue;
     }
 
+    .boxReceta__item {
+
+        transition: all 0.3s linear;
+    }
+
+    .boxReceta__item:hover {
+
+        color: map-get($colors, secondary);
+    }
+
     
-}
+
+    /* RECETAS */
+
+@media screen and (max-width: 480px) {
+
+.card {
+
+    height: 50%;
+
+    font-size: 1em ; 
+
+    .divBox {
+
+        flex-direction: column;
+
+        justify-content: center;
+    
+        width: 100%; }
+
+        .boxReceta {
+
+
+        &__info {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+    
+       padding: 15px; }
+
+        &__img {
+
+        gap: 8rem;
+    
+    width: 300px; 
+
+} } } 
+
+} 

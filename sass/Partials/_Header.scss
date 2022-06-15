@@ -15,19 +15,19 @@
 
     .navHeader {
 
-        display: flex;
+    display: flex;
 
-    justify-content: space-between;
+    justify-content: space-between; 
 
     max-width: 992px; }
 
-    .NavBoton {
+    .navBoton {
 
-        color: $secondary;
+        color: map-get($colors, secondary );
         background: none;
         border: none;
         font-size: $text-Medium;
-        padding: 0 20px;
+        padding: 0 5px;
         line-height: 60px;
         display: none;
 
@@ -37,8 +37,6 @@
     .MENU {
 
     display: flex;
-
-    margin-left: 170px;
 
     padding: 2rem;
 
@@ -53,7 +51,7 @@
     & .menu__link {
 
         text-decoration: none;
-        color: $ul;
+        color: map-get($colors, ul);
         transition: all .3s linear;
 }
 
@@ -88,7 +86,7 @@
     left: 30%;
     margin-top: 15%;
     font-family: $font-Title;
-    color: $base;
+    color: map-get($colors, base );
     font-size: $text-Large;
 
 
@@ -102,26 +100,57 @@
 
 @media screen and (max-width: 480px) {
 
-    .divHeader { height: 50px; 
+    .divHeader { 
 
-    .navHeader {    display: flex;
+        height: 50px;
+
+        width: 100%;
+        
+
+    .navHeader {   
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        margin: 5px;
+
+        gap: 1.5rem;
+
+         }
+
+         .navBoton {
+
+            display: block;
+        
+        
+          
+        }
     
-        justify-content: center;
-
-        padding: 0 20px; }
 
         .MENU {
 
-            display: flex;
+            row-gap: 3rem;
 
-        align-items: center;
+            padding: 0%;
+
+            
+         /*   left: 0;
+
+            top: 20px;
+
+            width: 100%;
+
+            padding: 20px 0; */
+
+        
 
 
         & .menu__item {
 
         font-size: $text-Small;
         margin: 0 7px;
-        gap: 2%;
+        gap: 2%; 
 
 
         }
@@ -131,12 +160,17 @@
 
 .Banner {
 
+    .Banner__img {
+
+        margin-top: 70px;
+    }
+
 .Banner__Inicio {
 
 
     left: 5%;
 
-    margin-top: 7%;
+    margin-top: 8%;
 
     font-size: $text-Banner;
 

@@ -2,7 +2,8 @@
 
 /* Misc */
 @import './misc/Variables.scss' ;
-@import './misc/Normalize' ;
+@import './misc/mixins';
+@import './misc/Normalize.scss' ;
 @import './misc/Animations' ;
 
 /* Partials */

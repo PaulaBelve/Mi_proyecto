@@ -6,7 +6,7 @@
 
      background-image: url(../IMG/hojitas.png);
 
-    color: $text;
+    color: map-get($colors, text);
 
      margin-top: 10%;
 
@@ -43,7 +43,7 @@
     
     text-decoration: none;
 
-    color: $ul;
+    color: map-get($colors, ul );
 
     font-size: $text-Base;
 
@@ -53,7 +53,7 @@
 
     text-decoration: none;
 
-    color: $ul;
+    color: map-get($colors, ul );
 
     font-size: 1em;
 

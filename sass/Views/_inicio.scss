@@ -1,12 +1,16 @@
+
+
 /* Main */
 
 .container
 
 .textosInicio {
 
+    flex: wrap;
+
     .proposito {
 
-        color: $primary;
+        color: map-get($colors, primary);
 
         text-align: center;
     

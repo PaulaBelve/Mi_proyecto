@@ -306,6 +306,7 @@ ul {
 } */
 
 /* ESTILOS BLOG */
+
 .card2 {
 
     width: 50%;
@@ -335,7 +336,7 @@ ul {
 
 /* ESTILOS Y ANIMACIONES CARD */
 
-.card {
+ /* .card {
 
     display: flex;
 
@@ -426,7 +427,7 @@ ul {
     color: var(--bs-link-color);
     text-decoration: underline; } */
 
-.imgBox {
+ /* .imgBox {
 
     transition: all 0.3s linear;
 
@@ -437,12 +438,12 @@ ul {
 
     transform: scale(1.1, 1.1);
     box-shadow: 0px 0px 10px cadetblue;
-}
+} */
 
 
-/* ESTILOS CONTACTO */
+/* ESTILOS CONTACTO CSS */
 
-#Formulario {
+ /* #Formulario {
 
     width: 30%;
 
@@ -452,7 +453,7 @@ ul {
 
     padding: 5%;
 
-}
+} */
 
 /* Estilos footer */
 

@@ -1,6 +1,21 @@
 /* Externos */
 /* Misc */
 /* colores */
+.color {
+  color: cornflowerblue; }
+
+.color {
+  color: purple; }
+
+.color {
+  color: darkslategrey; }
+
+.color {
+  color: #353333; }
+
+.color {
+  color: white; }
+
 /* Font family */
 /* Font sizes */
 * {
@@ -63,7 +78,11 @@ p {
 /* Estilos UL */
 ul {
   color: #353333;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
 
 /* Partials */
 /* Menu nav */
@@ -77,18 +96,17 @@ ul {
     display: flex;
     justify-content: space-between;
     max-width: 992px; }
-  .divHeader .NavBoton {
+  .divHeader .navBoton {
     color: purple;
     background: none;
     border: none;
     font-size: 3.2em;
-    padding: 0 20px;
+    padding: 0 5px;
     line-height: 60px;
     display: none; }
 
 .MENU {
   display: flex;
-  margin-left: 170px;
   padding: 2rem;
   list-style: none; }
   .MENU .menu__item {
@@ -119,21 +137,34 @@ ul {
 /* Media Query */
 @media screen and (max-width: 480px) {
   .divHeader {
-    height: 50px; }
+    height: 50px;
+    width: 100%; }
     .divHeader .navHeader {
-      display: flex;
-      justify-content: center;
-      padding: 0 20px; }
+      flex-direction: column;
+      padding: 20px;
+      margin: 5px;
+      gap: 1.5rem; }
+    .divHeader .navBoton {
+      display: block; }
     .divHeader .MENU {
-      display: flex;
-      align-items: center; }
+      row-gap: 3rem;
+      padding: 0%;
+      /*   left: 0;
+
+            top: 20px;
+
+            width: 100%;
+
+            padding: 20px 0; */ }
       .divHeader .MENU .menu__item {
         font-size: 1em;
         margin: 0 7px;
         gap: 2%; }
+  .Banner .Banner__img {
+    margin-top: 70px; }
   .Banner .Banner__Inicio {
     left: 5%;
-    margin-top: 7%;
+    margin-top: 8%;
     font-size: 2.2em; } }
 
 @media screen and (max-width: 768px) {
@@ -180,30 +211,27 @@ ul {
 
 /* Views */
 /* Main */
-.container
-.textosInicio .proposito {
-  color: cornflowerblue;
-  text-align: center;
-  font-size: 3.2em;
-  height: 20px;
-  padding: 30px; }
-
-.container
-.textosInicio #parrafoProp {
-  font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify;
-  padding: 5%; }
-
-.container
-.textosInicio .parrafo2 {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.5em;
-  padding: 25px;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 3rem; }
+.container .textosInicio {
+  flex: wrap; }
+  .container .textosInicio .proposito {
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 3.2em;
+    height: 20px;
+    padding: 30px; }
+  .container .textosInicio #parrafoProp {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 5%; }
+  .container .textosInicio .parrafo2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 25px;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 3rem; }
 
 /* Enlace directo-recetas */
 .row {
@@ -230,7 +258,119 @@ ul {
     width: 120%;
     height: 50%; } }
 
-/* Card recetas */
+/* ESTILOS BLOG */
+/* TITULO Y PARRAFO */
+.articulos {
+  margin-top: 20%; }
+  .articulos #parrafoProp {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 5%; }
+
+/* CARDS BLOG */
+.cardBlog .col-md-4 .card2 {
+  width: 50%;
+  margin: 25%;
+  margin-top: 5%;
+  transition: all 0.3s linear; }
+
+.cardBlog .col-md-4 .card-body .card-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #353333; }
+
+.card2:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 10px cadetblue; }
+
+/* Card recetas dulces */
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  /* display: flex;
+
+    flex-direction: row;
+
+    gap: 4rem;
+
+    justify-content: center; */
+  margin: 0.1em;
+  padding-left: 1em;
+  margin-top: 10%;
+  height: 100%;
+  font-size: 1.5em; }
+  .card .divBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* display: flex;
+    
+        flex-direction: column;
+    
+        gap: 1rem; */
+    font-size: 1em;
+    width: 25%; }
+  .card .boxReceta__info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 25px; }
+  .card .boxReceta__img {
+    gap: 8rem; }
+  .card .boxReceta__subtitle, .card .boxReceta__subtitle--budines {
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple; }
+    .card .boxReceta__subtitle--budines {
+      border: solid 1px purple; }
+  .card .boxReceta__link {
+    color: purple;
+    text-decoration: none;
+    font-size: 1em; }
+  .card .boxReceta__item {
+    text-decoration: none;
+    font-size: 1em;
+    color: darkslategrey; }
+
+.imgBox {
+  transition: all 0.3s linear; }
+
+.imgBox:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 10px cadetblue; }
+
+.boxReceta__item {
+  transition: all 0.3s linear; }
+
+.boxReceta__item:hover {
+  color: purple; }
+
+/* RECETAS */
+@media screen and (max-width: 480px) {
+  .card {
+    height: 50%;
+    font-size: 1em; }
+    .card .divBox {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%; }
+    .card .boxReceta__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px; }
+    .card .boxReceta__img {
+      gap: 8rem;
+      width: 300px; } }
+
+/* TITULO */
+/* Card recetas saladas */
 .card {
   display: flex;
   flex-direction: row;
@@ -239,7 +379,7 @@ ul {
   border: none;
   margin: 0.1em;
   padding-left: 1em;
-  margin-top: 10%;
+  margin-top: 1%;
   height: 100%;
   font-size: 1.5em; }
   .card .divBox {
@@ -253,21 +393,42 @@ ul {
     gap: 10px;
     flex-direction: column;
     padding: 25px; }
-    .card .boxReceta__info__img {
-      gap: 8rem; }
-    .card .boxReceta__info__subtitle {
-      font-family: Arial, Helvetica, sans-serif;
-      color: purple; }
-    .card .boxReceta__info__link {
-      color: purple;
-      text-decoration: none;
-      font-size: 1em; }
-    .card .boxReceta__info__item {
-      text-decoration: none;
-      font-size: 1em;
-      color: darkslategrey; }
-  .card .imgBox {
-    transition: all 0.3s linear; }
-  .card .imgBox:hover {
-    transform: scale(1.1, 1.1);
-    box-shadow: 0px 0px 10px cadetblue; }
+  .card .boxReceta__img {
+    gap: 8rem; }
+  .card .boxReceta__subtitle, .card .boxReceta__subtitle--budines {
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple; }
+  .card .boxReceta__link {
+    color: purple;
+    text-decoration: none;
+    font-size: 1em; }
+  .card .boxReceta__item {
+    text-decoration: none;
+    font-size: 1em;
+    color: darkslategrey; }
+
+.imgBox {
+  transition: all 0.3s linear; }
+
+.imgBox:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 10px cadetblue; }
+
+.boxReceta__item {
+  transition: all 0.3s linear; }
+
+.boxReceta__item:hover {
+  color: purple; }
+
+/* RECETAS */
+@media screen and (max-width: 480px) {
+  .divBox {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; } }
+
+.container .recetasSaladas {
+  margin-top: 20%; }
+
+/* CONTACTO */
+/* FORMULARIO */

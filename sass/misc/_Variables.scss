@@ -1,15 +1,25 @@
 
 /* colores */
 
-$primary: cornflowerblue ;
+$colors: (
 
-$secondary: purple;
+primary: cornflowerblue,
 
-$text: darkslategrey ;
+secondary: purple,
 
-$ul: rgb(53, 51, 51);
+text: darkslategrey,
 
-$base: white ;
+ul: rgb(53, 51, 51),
+
+base: white );
+
+@each $color, $value in $colors {
+
+    .#{color} {color: #{$value} ;
+    
+}
+    
+}
 
 /* Font family */
 
@@ -24,5 +34,6 @@ $text-Medium: 3.2em ;
 $text-Banner: 2.2em ;
 $text-Base: 1.5em ;
 $text-Small: 1em ;
+
 
 

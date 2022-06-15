@@ -1,0 +1,59 @@
+
+/* ESTILOS BLOG */
+
+/* TITULO Y PARRAFO */
+
+.articulos {
+
+    margin-top: 20%;
+
+
+#parrafoProp {
+    
+    font-size: $text-Base;
+
+    font-family: $font-Principal;
+
+    text-align: justify;
+
+    padding: 5%;
+
+} }
+
+/* CARDS BLOG */
+
+.cardBlog {
+
+.col-md-4 {
+
+.card2 {
+
+    width: 50%;
+
+    margin: 25%;
+
+    margin-top: 5%; 
+
+    transition: all 0.3s linear; } 
+
+    .card-body {
+
+    .card-text { 
+
+        font-family: $font-Principal;
+        font-size: $text-Small;
+        color: map-get($colors, ul );
+
+
+
+
+    } } } }
+
+
+.card2:hover {
+
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 10px cadetblue;
+
+
+} 
