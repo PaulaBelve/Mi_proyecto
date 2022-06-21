@@ -1,4 +1,11 @@
 
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@1,300;1,400&display=swap');
+
+
 /* colores */
 
 $colors: (
@@ -11,7 +18,7 @@ text: darkslategrey,
 
 ul: rgb(53, 51, 51),
 
-base: white );
+base: white ) ;
 
 @each $color, $value in $colors {
 
@@ -23,9 +30,11 @@ base: white );
 
 /* Font family */
 
-$font-Title: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+$font-Title: Poppins ;
+$font-Principal: Poppins ;
+$font-Secondary: Hallelujah ;
 
-$font-Principal: Arial, Helvetica, sans-serif ;
+
 
 /* Font sizes */
 
@@ -34,6 +43,8 @@ $text-Medium: 3.2em ;
 $text-Banner: 2.2em ;
 $text-Base: 1.5em ;
 $text-Small: 1em ;
+
+
 
 
 

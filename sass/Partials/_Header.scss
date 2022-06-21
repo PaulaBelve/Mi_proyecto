@@ -1,59 +1,66 @@
-
 /* Menu nav */
 
-.divHeader {
 
-    height: 80px;
+.divHeader {
+    
+    height: 20%;
 
     width: 100%;
+
+    top: 0;
+
+    left: 0;
+
+  
+
+ .navHeader {
 
     display: flex;
 
     flex-direction: row;
 
-    justify-content: flex-end;
-
-    .navHeader {
-
-    display: flex;
-
     justify-content: space-between; 
 
-    max-width: 992px; }
+
+    .logo {
+
+        height: 250px;
+        width: 250px;
+    }
 
     .navBoton {
 
-        color: map-get($colors, secondary );
+        color: map-get($colors, ul);
         background: none;
         border: none;
         font-size: $text-Medium;
-        padding: 0 5px;
-        line-height: 60px;
+        padding: 0 2px;
+        line-height: 0.1px; 
         display: none;
 
+} }
 
-    } }
-
-    .MENU {
+    
+   .MENU {
 
     display: flex;
 
     padding: 2rem;
 
-    list-style: none; 
-
+    list-style: none;
 
     & .menu__item {
 
-    font-size: $text-Base;
-    margin: 0 10px; }
- 
+        font-size: $text-Base;
+        margin: 0 10px;
+    }
+
     & .menu__link {
 
         text-decoration: none;
         color: map-get($colors, ul);
         transition: all .3s linear;
-}
+    }
 
     & .menu__link:hover {
 
@@ -62,37 +69,33 @@
 
     }
 
-}
- 
+} } 
 
 /* Banners */
 
 .Banner {
 
-    position: relative ; 
+    position: relative; 
+    
 
-   
+
     & .Banner__img {
 
-    width: 100%;
+        width: 100%; 
+        margin-top: 40px; }
+    
+    
 
+    & .Banner__Inicio {
 
-    margin-top: 40px; }
-
-  & .Banner__Inicio {
-
-    position: absolute;
-    top: 25px;
-    left: 30%;
-    margin-top: 15%;
-    font-family: $font-Title;
-    color: map-get($colors, base );
-    font-size: $text-Large;
-
-
+        position: absolute;
+        top: 25px;
+        left: 30%;
+        margin-top: 200px;
+        font-family: $font-Title;
+        color: map-get($colors, base);
+        font-size: $text-Large; 
     } } 
-
-
 
 
 
@@ -100,97 +103,114 @@
 
 @media screen and (max-width: 480px) {
 
-    .divHeader { 
-
-        height: 50px;
-
-        width: 100%;
-        
-
-    .navHeader {   
+        .divHeader { 
 
         flex-direction: column;
 
-        padding: 20px;
+        text-align: center;
 
-        margin: 5px;
+        gap: 2rem;
 
-        gap: 1.5rem;
+        font-size: .8em;
 
-         }
-
-         .navBoton {
-
-            display: block;
         
-        
-          
-        }
+           .navHeader {
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin: 5px; 
+
+            .logo {
+
+                height: 150px;
+                width: 150px;
+                margin-top: 20px;
+             }
     
+             .navBoton {
+    
+                display: block;
+    
+                font-size: $text-Medium; } } }
 
-        .MENU {
+          
+                input[type="checkbox"]:checked {
 
-            row-gap: 3rem;
-
-            padding: 0%;
-
-            
-         /*   left: 0;
-
-            top: 20px;
-
-            width: 100%;
-
-            padding: 20px 0; */
-
+                    display: block;
         
+                    position: absolute;
+        
+                }
+
+           .MENU {
+
+           display: none;
+
+           row-gap: 3rem;
+
+            & .menu__item {
+
+                font-size: $text-Small;
+                margin: 0 7px;
+                gap: 2em;
 
 
-        & .menu__item {
+            }
 
-        font-size: $text-Small;
-        margin: 0 7px;
-        gap: 2%; 
+           
 
-
-        }
-
-
-} } 
-
-.Banner {
-
-    .Banner__img {
-
-        margin-top: 70px;
-    }
-
-.Banner__Inicio {
-
-
-    left: 5%;
-
-    margin-top: 8%;
-
-    font-size: $text-Banner;
-
-} } }
-
-@media screen and (max-width: 768px) {
+        } 
+    
 
     .Banner {
 
-    .Banner__Inicio {
+        .Banner__img {
 
-        top: 12px;
-        left: 16%;
-        margin-top: 9%;
-        font-size: $text-Medium;
+            margin-top: 150px;
+        }
+
+        .Banner__Inicio {
+
+
+            margin-top: 150px;
+
+            font-size: $text-Base;
+
+        }
     }
-} }
+}
 
+@media screen and (max-width: 768px) {
 
+    .divHeader {
 
-    
- 
-    
+        font-size: .8em; 
+
+        .logo {
+
+            height: 150px;
+            width: 150px; 
+            
+        } 
+
+           .navHeader {
+
+            margin: 5px; }
+
+           } }
+
+    .Banner {
+
+        margin-top: 50px;
+
+        .Banner__Inicio {
+
+            margin-top: 170px;
+
+        font-size: $text-Base;
+        }
+    }

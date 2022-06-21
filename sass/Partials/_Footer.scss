@@ -4,13 +4,19 @@
 .footer {
 
 
-     background-image: url(../IMG/hojitas.png);
+    background-image: url(../IMG/hojitas.png);
 
     color: map-get($colors, text);
 
      margin-top: 10%;
 
      gap: 1em;
+
+     display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
 
     
 & .footer__nav {
@@ -23,7 +29,9 @@
 
     margin: 20%;
 
-    margin-top: 10%; } 
+    margin-top: 5px;
+
+     } 
 
   & .footer__info {
 

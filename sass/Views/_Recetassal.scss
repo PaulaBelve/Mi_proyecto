@@ -1,6 +1,33 @@
 
 /* TITULO */
 
+.container 
+
+.recetasSaladas {
+
+        color: map-get($colors, primary);
+
+        text-align: center;
+    
+        font-size: $text-Medium;
+    
+        height: 10px;
+    
+        padding: 30px; 
+}
+
+#parrafoReceta {
+    
+    font-size: $text-Base;
+
+    font-family: $font-Principal;
+
+    text-align: center;
+
+    padding: 5%; 
+
+}
+
 
 /* Card recetas saladas */
 
@@ -8,7 +35,7 @@
 
     display: flex;
 
-    flex-direction: row;
+    flex-direction: column;
 
     gap: 4rem;
 
@@ -130,9 +157,3 @@
 
 } }
 
-.container {
-
-.recetasSaladas {
-
-    margin-top: 20%;
-} }

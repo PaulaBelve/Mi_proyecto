@@ -3,9 +3,19 @@
 
 /* TITULO Y PARRAFO */
 
-.articulos {
+.budines {
 
-    margin-top: 20%;
+    color: map-get($colors, primary);
+
+    text-align: center;
+
+    font-size: $text-Medium;
+
+    height: 10px;
+
+    padding: 30px;
+}
+
 
 
 #parrafoProp {
@@ -18,7 +28,7 @@
 
     padding: 5%;
 
-} }
+} 
 
 /* CARDS BLOG */
 

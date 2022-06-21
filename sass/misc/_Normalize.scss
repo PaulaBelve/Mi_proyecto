@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +15,7 @@ img {
 
     width: 100%;
 }
+
 
 html {
 
@@ -46,9 +52,9 @@ h2 {
 
     display: block 2px;
 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font-Principal;
 
-    ;
+    
     margin-top: 20px;
 
 }
@@ -63,7 +69,7 @@ h1 {
     font-size: 1.5em;
 
 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: $font-Principal;
 }
 
 /* ESTILOS h4 */
@@ -86,9 +92,9 @@ h5 {
 /* Estilos parrafos */
 
 p {
-    font-size: 1em;
+    font-size: $text-Small;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-Title;
 
     color: map-get($colors, text);
 
@@ -102,7 +108,7 @@ p {
 ul {
     color: map-get($colors, ul);
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-Title;
 
     list-style: none;
 

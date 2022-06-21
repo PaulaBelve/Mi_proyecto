@@ -6,7 +6,6 @@
 
 .textosInicio {
 
-    flex: wrap;
 
     .proposito {
 
@@ -16,7 +15,7 @@
     
         font-size: $text-Medium;
     
-        height: 20px;
+        height: 10px;
     
         padding: 30px; }
 
@@ -52,12 +51,18 @@
     
 } 
 
-/* Enlace directo-recetas */
+/* Enlace directo-budines */
 
 .row { 
 
+    display: flex;
+
+    flex-direction: row;
+
     gap: 25px;
     margin-top: 25px;
+
+    
 
     .box { 
         height: 25%;
@@ -94,21 +99,38 @@
 
 @media screen and (max-width: 480px) {
 
+        .parrafo2 {
+        
+            flex-direction: column;
+        
+            justify-content: center;
+        
+            align-items: center;
+        
+        
+        
+        } } 
+
 .row {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
 & .box {
 
     display: flex;
     flex-direction: column;
-    width: 120%;
-    height: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    
 
-}
+} } 
 
 
-
-} }
 
 
 
