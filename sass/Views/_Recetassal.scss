@@ -35,11 +35,11 @@
 
     display: flex;
 
-    flex-direction: column;
+    flex-direction: row;
 
     gap: 4rem;
 
-    justify-content: center;
+    justify-content: space-around;
 
     border: none;
 
@@ -57,7 +57,7 @@
 
         display: flex;
     
-        flex-direction: column;
+        flex-direction: row;
     
         gap: 1rem;
     

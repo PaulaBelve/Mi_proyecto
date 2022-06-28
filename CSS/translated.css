@@ -37,7 +37,7 @@ html {
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh; }
+  min-height: 50vh; }
 
 /*main {
 
@@ -111,10 +111,13 @@ a {
       padding: 0 2px;
       line-height: 0.1px;
       display: none; }
+    .divHeader .navHeader input[type="checkbox"] {
+      display: none; }
   .divHeader .MENU {
     display: flex;
     padding: 2rem;
-    list-style: none; }
+    list-style: none;
+    margin-top: 70px; }
     .divHeader .MENU .menu__item {
       font-size: 1.5em;
       margin: 0 10px; }
@@ -138,15 +141,15 @@ a {
     margin-top: 200px;
     font-family: Poppins;
     color: white;
-    font-size: 5em; }
+    font-size: 3.2em; }
 
 /* Media Query */
 @media screen and (max-width: 480px) {
   .divHeader {
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
     gap: 2rem;
-    font-size: .8em; }
+    font-size: 4em; }
     .divHeader .navHeader {
       flex-direction: column;
       justify-content: center;
@@ -155,39 +158,49 @@ a {
       .divHeader .navHeader .logo {
         height: 150px;
         width: 150px;
-        margin-top: 20px; }
+        margin-top: 0.1px; }
       .divHeader .navHeader .navBoton {
+        margin-top: 0.1px;
         display: block;
         font-size: 3.2em; }
-  input[type="checkbox"]:checked {
-    display: block;
-    position: absolute; }
-  .MENU {
-    display: none;
-    row-gap: 3rem; }
-    .MENU .menu__item {
-      font-size: 1em;
-      margin: 0 7px;
-      gap: 2em; }
-  .Banner .Banner__img {
-    margin-top: 150px; }
-  .Banner .Banner__Inicio {
-    margin-top: 150px;
-    font-size: 1.5em; } }
+      .divHeader .navHeader input[type="checkbox"] {
+        top: 156px;
+        height: 16px;
+        width: 16px;
+        opacity: 0;
+        position: absolute; }
+      .divHeader .navHeader input[type="checkbox"]:checked > .MENU {
+        display: block; }
+      .divHeader .navHeader .MENU {
+        display: none;
+        margin-top: 0.1px; }
+      .divHeader .navHeader .menu__item {
+        font-size: 1.3em;
+        margin: 0 7px;
+        gap: 2em; } }
+
+.Banner .Banner__img {
+  margin-top: 40px; }
+
+.Banner .Banner__Inicio {
+  margin-top: 30px;
+  font-size: 1.5em; }
 
 @media screen and (max-width: 768px) {
   .divHeader {
     font-size: .8em; }
+    .divHeader .navHeader {
+      margin: 5px; }
     .divHeader .logo {
       height: 150px;
-      width: 150px; }
-    .divHeader .navHeader {
-      margin: 5px; } }
+      width: 150px; } }
 
 .Banner {
-  margin-top: 50px; }
+  margin-top: 100px; }
+  .Banner .Banner__img {
+    margin-top: 40px; }
   .Banner .Banner__Inicio {
-    margin-top: 170px;
+    margin-top: 30px;
     font-size: 1.5em; }
 
 /* Footer */
@@ -239,7 +252,7 @@ a {
 
 .container .textosInicio #parrafoProp {
   font-size: 1.5em;
-  font-family: Poppins;
+  color: cornflowerblue;
   text-align: justify;
   padding: 5%; }
 
@@ -253,21 +266,23 @@ a {
   gap: 3rem; }
 
 /* Enlace directo-budines */
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
+.enlaceRecetas {
+  height: 100%;
+  width: 100%; }
+
+.nuestrosBudines {
+  margin-top: 10%; }
+
+.card-group {
   margin-top: 25px; }
-  .row .box {
-    height: 25%;
-    border: solid 2px grey;
-    width: 20%;
+  .card-group .cardBudines {
+    border: transparent 2px grey;
     transition: all 0.3s linear; }
-    .row .box__img {
+    .card-group .cardBudines__img {
       gap: 2em;
       margin-top: 2%;
-      width: 100%; }
-    .row .box:hover {
+      width: 50%; }
+    .card-group .cardBudines:hover {
       transform: scale(1.1, 1.1);
       box-shadow: 0px 0px 10px cadetblue; }
 
@@ -280,8 +295,8 @@ a {
 
 .row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center; }
   .row .box {
     display: flex;
@@ -333,7 +348,7 @@ a {
 .card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 4rem;
   margin: 0.1em;
@@ -343,21 +358,19 @@ a {
   font-size: 1.5em; }
   .card .divBox {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    /*   flex-basis: 30%;
-
-        flex-grow: 1;
-
-        flex-shrink: 1; */
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
     font-size: 1em;
     width: 25%; }
   .card .boxReceta__info {
     display: flex;
     gap: 10px;
-    flex-direction: column;
+    flex-direction: row;
     padding: 25px; }
   .card .boxReceta__img {
     gap: 8rem; }
@@ -391,6 +404,11 @@ a {
 /* RECETAS */
 @media screen and (max-width: 480px) {
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     font-size: 1em; }
     .card .divBox {
       flex-direction: column;
@@ -423,9 +441,9 @@ a {
 /* Card recetas saladas */
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 4rem;
-  justify-content: center;
+  justify-content: space-around;
   border: none;
   margin: 0.1em;
   padding-left: 1em;
@@ -434,7 +452,7 @@ a {
   font-size: 1.5em; }
   .card .divBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     font-size: 1em;
     width: 25%; }

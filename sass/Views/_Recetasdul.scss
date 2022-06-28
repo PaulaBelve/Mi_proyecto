@@ -18,7 +18,7 @@
 
 .card {
 
-    @include flex (row, center,center, 4rem);
+    @include flex (row, space-between,center, 4rem);
 
     margin: 0.1em;
 
@@ -32,13 +32,13 @@
 
     .divBox {
 
-        @include flex (column, space-around,center, 1rem);
+        @include flex (row, space-between,center, 1rem);
 
-     /*   flex-basis: 30%;
+        flex-basis: 30%;
 
         flex-grow: 1;
 
-        flex-shrink: 1; */
+        flex-shrink: 1; 
 
         font-size: $text-Small;
 
@@ -54,7 +54,7 @@
 
             gap: 10px;
 
-            flex-direction: column;
+            flex-direction: row;
 
             padding: 25px;
         }
@@ -129,6 +129,8 @@
 @media screen and (max-width: 480px) {
 
     .card {
+
+        @include flex (column, center,center, 4rem);
 
         font-size: 1em;
 
