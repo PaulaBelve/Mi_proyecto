@@ -30,10 +30,12 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
     <header>
         <div class="divHeader">
             <nav class="navHeader">
-                <img class="logo" src="../IMG/delfos sombra.png" alt="logo">
-                <button class="navBoton">
-                    <i class="fas fa-bars"></i>
-                </button>
+            
+                <img class="logo" src="../IMG/DELFOS (3).png" alt="logo">
+
+               <label class="navBoton" for="hamburguesa"><i class="fas fa-bars"></i></label>
+
+               <input type="checkbox" name="hamburguesa" id="hamburguesa">
 
                 <ul class="MENU">
 
@@ -85,111 +87,78 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 
         <h1 class="recetasSaladas">RECETAS</h1>
 
-        <p id="parrafoReceta"> En esta sección les comparto algunas de mis recetas favoritas, para desayunos o meriendas saludables y nutritivas. </p>
+        <p id="parrafoReceta"> En esta sección les compartimos algunas de nuetras recetas favoritas para desayunos o meriendas, ricas, saludables y nutritivas. </p>
 
      
         <!-- BEM RECETAS -->
 
-        <section class="card">
+        <section class="cardRecetas">
 
-            <div class="divBox"> 
-
-            <article class=boxReceta>
-                <picture class="boxReceta__img">
-                    <img class=imgBox src="../IMG/pan-de-calabaza.jpg" alt="">
+            <article class="boxRecetas"> 
+                <picture class="boxRecetas__img">
+                    <img src="../IMG/PANES.png" alt="">
                 </picture>
+               <div class="boxRecetas__info">
+               <h3 class="boxRecetas__title">PAN DE CALABAZA</h3>
+               <ul class="boxRecetas__text">
+                   <li><p> Rodajas de calabaza (asadas o al vapor)</p></li>
+                    <li><p> gr de harina integral (o la harina que tengas)</p></li>
+                    <li><p> 25 gr de levadura fresca o 5 gr de levadura seca</p></li>
+                    <li><p> 1 pocillo de aceite</p></li>
+                    <li><p> taza de agua</p></li>
 
+                    <b><a href="../index.html" class="boxRecetas__boton"> Ver más...
+                        <span></span>
+                       </a></b>
 
+               </div>
             </article>
-
-            <article class="boxReceta__info">
-
-                <h3 class="boxReceta__subtitle">PAN DE CALABAZA</h3>
-
-                <ul class="boxReceta__text">
-
-                    <li> <a class="boxReceta__item" href="../index.html"> 4 Rodajas de calabaza (asadas o al vapor)</a></li>
-                    
-                    <li> <a class="boxReceta__item" href="../index.html">500 gr de harina integral (o la harina que tengas)</a></li>
-                    
-                    <li><a class="boxReceta__item" href="../index.html"> 25 gr de levadura fresca o 5 gr de levadura seca</a></li>
-                    
-                    <li><a class="boxReceta__item" href="../index.html"> 1 pocillo de aceite</a></li>
-
-                    <li><a class="boxReceta__item" href="../index.html"> 1 taza de agua</a></li>
-
-                <a href="./index.html" class="boxReceta__link">Ver más ...</a>
-            </article>
-
-            <article class=boxReceta>
-                <picture class="boxReceta__img">
-                    <img class=imgBox src="../IMG/PANCAKES 2.webp" alt="">
+            
+                <article class=boxRecetas>
+                <picture class="boxRecetas__img">
+                <img src="../IMG/Rectangle 1.png" alt="">
                 </picture>
+            <div class="boxRecetas__info">
+            <h3 class="boxRecetas__title">PANQUEQUE DE BANANA</h3>
+            <ul class="boxRecetas__text">
+            
+                <li><p> 2 bananas pisadas</p></li>
+                <li><p> 1/2 taza de avena</p></li>
+                <li><p> 1 cucharadita de polvo de hornear</p></li>
+                <li><p> 2 huevos</p></li>
+                <li><p> 2 chorritos de leche vegetal o la que mas te guste </p></li>
 
-
-            </article>
-
-            <article class="boxReceta__info">
-
-                <h3 class="boxReceta__subtitle">PANQUEQUE DE BANANA</h3>
-
-                <ul class="boxReceta__text">
-
-                    <li> <a class="boxReceta__item" href="../index.html"> 2 bananas pisadas</a></li>
-                    
-                    <li> <a class="boxReceta__item" href="../index.html"> 1/2 taza de avena</a></li>
-                    
-                    <li><a class="boxReceta__item" href="../index.html"> 1 cucharadita de polvo de hornear </a></li>
-                    
-                    <li><a class="boxReceta__item" href="../index.html"> 2 huevos </a></li>
-
-                    <li><a class="boxReceta__item" href="../index.html"> 2 chorritos de leche vegetal o la que mas te guste</a></li>
-
-                
-
-                <a href="./index.html" class="boxReceta__link">Ver más ...</a>
-
-            </article>
+                <b><a href="../index.html" class="boxRecetas__boton"> Ver más...
+                 <span></span>
+                </a></b>
 
             </div>
-
-           
-
-        </section>
+                </article>
+            </section>
 
 
 </main>
   
     <!-- INICIO DEL FOOTER -->
     
-    <footer>
+    <footer class="footer" class="container-fluid">
 
-        <section class="footer">
-            <nav class="footer__nav">
-                <ul class="menuFooter">
+        <p><b>+ info:</b></p>
+        <p> <img class="iconos" src="../IMG/gmail.png" alt=""> Delfoscocina@gmail.com</p>
+    
 
-                    <li class="footer__item"><a class="footer__link" href="../index.html">Inicio</a></li>
+        <p><b>Redes</b></p>
 
-                    <li class="footer__item"><a class="footer__link" href="./Blog2.html">Sobre mi</a></li>
+       <p> <img class="iconos" src="../IMG/instagram (1).png" alt=""> </p>
+         <img class="iconos" src="../IMG/facebook.png" alt=""> 
+    
+<section class="finFooter">
 
-                    <li class="footer__item"><a class="footer__link" href="./RecetasDul3.html">Budines</a></li>
+   <p> Recetas hechas con Amor </p>
+   <p>By Delfos, cocina saludable</p>
+</section> 
 
-                    <li class="footer__item"><a class="footer__link" href="./RecetasSal4.html">Recetas</a></li>
-
-                    <li class="footer__item"><a class="footer__link" href="./Contacto5.html">Contacto</a></li>
-                </ul>
-            </nav>
-       
-
-        <div class="footer__info">
-
-            <p><b>+ info:</b></p>
-            <p><b>Mail:</b> Paulanutricion@gmail.com</p>
-
-        </div>
-    </section>
-
-    </footer>
+</footer>
 
         <!-- FIN DEL FOOTER -->
           

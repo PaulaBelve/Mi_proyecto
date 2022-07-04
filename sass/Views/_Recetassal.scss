@@ -1,5 +1,5 @@
 
-/* TITULO */
+/* TITULO Y TEXTO */
 
 .container 
 
@@ -10,10 +10,7 @@
         text-align: center;
     
         font-size: $text-Medium;
-    
-        height: 10px;
-    
-        padding: 30px; 
+  
 }
 
 #parrafoReceta {
@@ -24,136 +21,113 @@
 
     text-align: center;
 
-    padding: 5%; 
-
+    
 }
 
 
-/* Card recetas saladas */
+/* Card recetas */
 
-.card {
+.cardRecetas {
 
     display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 5%;
+    
 
-    flex-direction: row;
 
-    gap: 4rem;
+.boxRecetas {
 
-    justify-content: space-around;
-
-    border: none;
-
-    margin: 0.1em;
-
-    padding-left: 1em;
-
-    margin-top: 1%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
     height: 100%;
-
-    font-size: 1.5em ; 
-
-    .divBox {
-
-        display: flex;
-    
-        flex-direction: row;
-    
-        gap: 1rem;
-    
-        font-size: 1em;
-    
-        width: 25%; }
-
-        .boxReceta {
-
-
-        &__info {
-
-        display: flex;
-
-        gap: 10px;
-    
-        flex-direction: column;
-    
-        padding: 25px; }
-
-        &__img {
-
-        gap: 8rem; }
-    
-    &__subtitle {
-
-        font-family: Arial, Helvetica, sans-serif;
-
-    color: map-get($colors, secondary );
-
-
-    }
-
-    &__link {
-
-        color: map-get($colors, secondary );
-
-    text-decoration: none;
-
-    font-size: 1em;
-
-
-    }
-
-    &__item {
-
-        text-decoration: none;
-    font-size: 1em;
-    color: map-get($colors, text);
-
+    width: 40%;
+    border-radius: 21px;
+    border: 1px solid map-get($colors, ul);
+    box-shadow: 0 0 30px map-get($colors, primary) ;
+    transition: all 0.3s linear;
    
 
+    & .boxRecetas__img {
+
+        height: 100% ;
+        width: 100%;
+        padding: 3%;
+        
+        }
+
+    & .boxRecetas__title {
+
+      color: map-get($colors, secondary);
+      font-size: $text-title;
+      font-family: $font-Secondary;
+      margin: 4%;
+
 
     }
 
-    } } 
+    & .boxRecetas__text {
 
-    .imgBox {
+        font-size: $text-Small;
+        font-family: $font-Principal ;
+        color: map-get($colors, secondary);
+        margin: 4%;
+         }
 
-        transition: all 0.3s linear;
-    
-    
-    }
-    
-    .imgBox:hover {
-    
+    & .boxRecetas__boton {
+
+        color:map-get($colors, primary) ;
+    } 
+    } }
+
+    .boxRecetas:hover {
+
         transform: scale(1.1, 1.1);
         box-shadow: 0px 0px 10px cadetblue;
     }
 
-    .boxReceta__item {
+/* Media querys */
 
-        transition: all 0.3s linear;
-    }
+@media screen and (max-width: 320px) {
 
-    .boxReceta__item:hover {
-
-        color: map-get($colors, secondary );
-    }
-
+    .boxRecetas {
     
-
-
-/* RECETAS */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       } } 
 
 @media screen and (max-width: 480px) {
 
- 
+    .cardRecetas {
 
- .divBox {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 5%;
+    
+    
+    .boxRecetas {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 21px;
+        border: 1px solid map-get($colors, ul);
+        box-shadow: 0 0 30px map-get($colors, primary) ;
+   } 
 
-    flex-direction: column;
+   & .boxRecetas__title {
 
-    justify-content: center;
+    font-size: $text-Base;
+    margin: 0;
 
-    width: 100%;
 
-} }
+   } } } 
 

@@ -10,7 +10,7 @@
   color: cornflowerblue; }
 
 .color {
-  color: purple; }
+  color: #817f7f; }
 
 .color {
   color: darkslategrey; }
@@ -39,11 +39,10 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh; }
 
-/*main {
+.mainInicio {
+  margin: 50%;
+  max-width: 1200px; }
 
-     margin: auto;
-
-   max-width: 1200px; }*/
 /* Estilos h2 */
 .h2,
 h2,
@@ -54,7 +53,7 @@ h2 {
   font-size: 2em;
   display: block 2px;
   font-family: Poppins;
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 /* Estilos h1 */
 .h1,
@@ -90,6 +89,10 @@ a {
 
 /* Partials */
 /* Menu nav */
+header {
+  height: 30%;
+  width: 100%; }
+
 .divHeader {
   height: 100px;
   width: 100%; }
@@ -99,20 +102,19 @@ a {
     justify-content: space-between; }
     .divHeader .navHeader .logo {
       display: block;
-      height: 250px;
-      width: 250px; }
-    .divHeader .navHeader .logo > img {
-      width: 100%;
+      height: 20%;
+      width: 20%; }
+    .divHeader .navHeader .logo img {
+      width: 200%;
       object-fit: cover; }
     .divHeader .navHeader .navBoton {
-      color: #353333;
+      color: #37689B;
       background: none;
-      border: none;
       font-size: 3.2em;
       padding: 0 2px;
       line-height: 0.1px;
       display: none; }
-    .divHeader .navHeader > input {
+    .divHeader .navHeader input {
       display: none; }
     .divHeader .navHeader .MENU {
       display: flex;
@@ -127,182 +129,141 @@ a {
         color: #353333;
         transition: all .3s linear; }
       .divHeader .navHeader .MENU .menu__link:hover {
-        border-bottom: 1px solid violet; }
+        border-bottom: 2px solid violet; }
 
 /* Banners */
 .Banner {
-  margin-top: 50px;
+  position: relative;
   width: 100%;
-  height: 48rem;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url(../IMG/BanerCielo.png); }
+  height: 100%;
+  margin-top: 8%; }
+  .Banner .Banner__img {
+    width: 100%;
+    margin-top: 5%; }
+  .Banner .Banner__Inicio {
+    position: absolute;
+    margin: 50px;
+    top: 25px;
+    left: 30%;
+    margin-top: 50px;
+    font-family: Poppins;
+    color: white;
+    font-size: 5em; }
 
-/*  position: relative; 
-    
-    & .Banner__img {
-
-        width: 100%; 
-        margin-top: 20px;
-    
-     & .Banner__Inicio {
-
-        position: absolute;
-        top: 25px;
-        left: 30%;
-        font-family: $font-Title;
-        color: map-get($colors, base);
-        font-size: $text-Large; 
-    } } } */
 /* Media Query */
 @media screen and (max-width: 480px) {
-  .divHeader.navHeader.navBoton {
+  header {
+    height: 300px; }
+  .divHeader .navHeader .navBoton {
     display: block;
     font-size: 3.2em;
     width: 30px;
     height: 30px;
+    border-radius: 2px;
     align-self: center;
     z-index: 10;
     margin-right: 20px; }
-  .divHeader.navHeader #hamburguesa {
+  .divHeader .navHeader #hamburguesa {
     position: absolute;
     right: 25px;
     top: 45px;
     z-index: 0; }
-  .divHeader.navHeader #hamburguesa:checked ~ ul {
+  .divHeader .navHeader #hamburguesa:checked ~ ul {
     height: 200px;
     transition: heigth 1s; }
-  .divHeader.navHeader .MENU {
+  .divHeader .navHeader .MENU {
     position: absolute;
     flex-flow: column;
     height: 0%;
     right: 10px;
     top: 110px;
+    background-color: white;
     overflow: hidden;
     z-index: 5;
     transition: heigth 1s; }
-    .divHeader.navHeader .MENU .menu__item {
-      font-size: 2em;
+    .divHeader .navHeader .MENU .menu__item {
+      color: grey;
+      border-bottom: solid 2px gray;
+      font-size: 1.2em;
       display: block; } }
 
 .Banner .Banner__img {
-  margin-top: 40px; }
+  margin: 5px;
+  top: 13px; }
 
 .Banner .Banner__Inicio {
-  font-size: 1.5em; }
+  margin-top: 30px;
+  font-size: 2.2em; }
 
 @media screen and (max-width: 768px) {
-  .divHeader {
-    font-size: .8em; }
-    .divHeader .navHeader {
-      margin: 5px; }
-    .divHeader .logo {
-      height: 150px;
-      width: 150px; }
-  .Banner {
-    margin-top: 100px; }
-    .Banner .Banner__img {
-      margin-top: 40px; }
-    .Banner .Banner__Inicio {
-      margin-top: 30px;
-      font-size: 1.5em; } }
+  .Banner .Banner__img {
+    right: 5px;
+    top: 13px; }
+  .Banner .Banner__Inicio {
+    font-size: 2.2em; } }
 
 /* Footer */
-.footer {
+footer {
   background-image: url(../IMG/hojitas.png);
   color: darkslategrey;
-  margin-top: 8em;
+  margin-top: 10%;
   height: 100%;
   width: 100%;
-  gap: 1em;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5em;
   font-family: Poppins; }
-  .footer .footer__nav {
+  footer .divFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 16%;
-    margin-top: 5px; }
-    .footer .footer__nav .menuFooter {
-      list-style: none;
-      font-size: 1.5em;
-      margin-right: 25px; }
-    .footer .footer__nav .footer__item {
-      text-decoration: none;
-      color: #353333;
-      font-size: 1em;
-      margin-top: 8px; }
-    .footer .footer__nav .footer__link {
-      text-decoration: none;
-      color: #353333;
-      font-size: 1em; }
-    .footer .footer__nav .footer__link:hover {
-      color: purple; }
-  .footer .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 30%; }
-    .footer .info .footer__info {
-      margin-right: 60px; }
-    .footer .info .redes {
-      margin-right: 50px; }
-  .footer .iconos {
-    gap: 2em;
-    height: 25px;
-    width: 25px; }
-  .footer .finFooter {
+    gap: 1rem;
+    margin-right: 5%; }
+    footer .divFooter .iconos {
+      gap: 0.1em;
+      height: 25px;
+      width: 25px; }
+  footer .finFooter {
+    font-size: 0.7em;
+    margin-top: 8%;
     align-items: center; }
 
 /* Media query */
 @media screen and (max-width: 480px) {
-  .footer {
+  footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    font-size: 1em;
-    margin-top: 30px; }
-    .footer .footer__nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 50px; }
-    .footer .menuFooter {
+    align-items: center;
+    font-size: 1em; }
+    footer .divFooter {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 80px;
-      margin-top: 15px; }
-  .info {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 85px;
-    margin-right: 65px; }
-    .info .redes {
-      margin-right: 50px; }
-  .iconos {
-    height: 20px;
-    width: 20px; } }
+      align-items: center;
+      margin-right: 0; }
+    footer .iconos {
+      height: 20px;
+      width: 20px; } }
 
 /* Views */
 /* Main */
-.container .textosInicio .proposito {
+.textosInicio .proposito {
   color: cornflowerblue;
   text-align: center;
   font-size: 3.2em;
   height: 10px;
   padding: 30px; }
 
-.container .textosInicio #parrafoProp {
+.textosInicio #parrafoProp {
   font-size: 1.5em;
   color: cornflowerblue;
   text-align: justify;
   padding: 5%; }
 
-.container .textosInicio .parrafo2 {
+.textosInicio .parrafo2 {
   display: flex;
   flex-direction: row;
   font-size: 1.5em;
@@ -313,48 +274,56 @@ a {
 
 /* Enlace directo-budines */
 .enlaceRecetas {
-  height: 100%;
-  width: 100%; }
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 65%;
+  background-image: url(../IMG/fondo-acuarela-pintada-mano_24972-1198.webp); }
 
 .nuestrosBudines {
-  margin-top: 10%; }
+  color: #817f7f;
+  text-align: center;
+  font-size: 3.2em;
+  height: 10px;
+  padding: 30px;
+  margin-top: 5%; }
 
-.card-group {
-  margin-top: 25px; }
-  .card-group .cardBudines {
-    border: transparent 2px grey;
-    transition: all 0.3s linear; }
-    .card-group .cardBudines__img {
-      gap: 2em;
-      margin-top: 2%;
-      width: 50%; }
-    .card-group .cardBudines:hover {
-      transform: scale(1.1, 1.1);
-      box-shadow: 0px 0px 10px cadetblue; }
+.card1 {
+  margin-top: 5%;
+  border-radius: 21px;
+  flex-direction: row;
+  transition: all 0.3s linear; }
+  .card1 .card1-img-top {
+    width: 100%;
+    border-radius: 21px; }
+  .card1 .card1-title {
+    color: #817f7f;
+    margin-top: 4%;
+    margin: 5%;
+    font-size: 2em;
+    font-family: Hallelujah; }
+  .card1 img:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 10px cadetblue; }
 
 /* Media Query */
 @media screen and (max-width: 480px) {
   .parrafo2 {
     flex-direction: column;
-    justify-content: center;
-    align-items: center; } }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .row .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 200px; }
+    justify-content: center; } }
 
 /* ESTILOS BLOG */
 /* TITULO Y PARRAFO */
 .budines {
   color: cornflowerblue;
+  text-align: center;
+  font-size: 3.2em;
+  height: 10px;
+  padding: 30px; }
+
+.budines2 {
+  color: #817f7f;
   text-align: center;
   font-size: 3.2em;
   height: 10px;
@@ -367,13 +336,25 @@ a {
   padding: 5%; }
 
 /* CARDS BLOG */
-.cardBlog .col-md-4 .card2 {
+.articulos {
+  background-image: url(../IMG/fondo-acuarela-pintada-mano_24972-1198.webp); }
+
+.cardBlog .col-md-3 .card2 {
+  border-radius: 21px;
+  border: 1px solid #353333;
   width: 50%;
-  margin: 25%;
-  margin-top: 5%;
+  height: 50%;
   transition: all 0.3s linear; }
 
-.cardBlog .col-md-4 .card-body .card-text {
+.cardBlog .col-md-3 .card-img-top {
+  width: 40%;
+  height: 40%; }
+
+.cardBlog .col-md-3 .card-body {
+  margin: 15%;
+  margin-top: 5%; }
+
+.cardBlog .col-md-3 .card-text {
   font-family: Poppins;
   font-size: 1em;
   color: #353333; }
@@ -386,160 +367,153 @@ a {
 .budines {
   color: cornflowerblue;
   text-align: center;
-  font-size: 3.2em;
-  height: 10px;
-  padding: 30px; }
+  font-size: 3.2em; }
 
-/* Card recetas dulces */
-.card {
+.ingredientes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 4rem;
-  margin: 0.1em;
-  padding-left: 1em;
-  margin-top: 10%;
-  height: 100%;
+  gap: 2rem;
+  margin-top: 5%; }
+
+#parrafoProp {
+  font-size: 1.5em;
+  font-family: Poppins;
+  text-align: center; }
+
+/*Carrousel*/
+.carousel-inner {
+  width: 100%;
+  height: 100%; }
+
+/* Card recetas dulces */
+.cardBudines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 8%;
   font-size: 1.5em; }
-  .card .divBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    flex-basis: 30%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    font-size: 1em;
-    width: 25%; }
-  .card .boxReceta__info {
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    padding: 25px; }
-  .card .boxReceta__img {
-    gap: 8rem; }
-  .card .boxReceta__subtitle, .card .boxReceta__subtitle--budines {
-    font-family: Poppins;
-    color: purple; }
-    .card .boxReceta__subtitle--budines {
-      border: solid 1px purple; }
-  .card .boxReceta__link {
-    color: purple;
-    text-decoration: none;
-    font-size: 1em; }
-  .card .boxReceta__item {
-    text-decoration: none;
-    font-size: 1em;
-    color: darkslategrey; }
-
-.imgBox {
-  transition: all 0.3s linear; }
-
-.imgBox:hover {
-  transform: scale(1.1, 1.1);
-  box-shadow: 0px 0px 10px cadetblue; }
-
-.boxReceta__item {
-  transition: all 0.3s linear; }
-
-.boxReceta__item:hover {
-  color: purple; }
-
-/* RECETAS */
-@media screen and (max-width: 480px) {
-  .card {
+  .cardBudines .divBudines {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
-    font-size: 1em; }
-    .card .divBox {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%; }
-    .card .boxReceta__info {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding: 15px; }
-    .card .boxReceta__img {
-      gap: 8rem;
-      width: 300px; } }
+    gap: 4rem; }
+  .cardBudines .boxBudines {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    border-radius: 21px;
+    border: 1px solid #353333;
+    box-shadow: 0 0 30px cornflowerblue;
+    transition: all 0.3s linear; }
 
-/* TITULO */
-.container .recetasSaladas {
+.boxBudines:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 10px cadetblue; }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 480px) {
+  #parrafoProp {
+    margin: 10px; }
+  .ingredientes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+.cardBudines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  font-size: 1em; }
+  .cardBudines .divRecetas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+/* TITULO Y TEXTO */
+.container
+.recetasSaladas {
   color: cornflowerblue;
   text-align: center;
-  font-size: 3.2em;
-  height: 10px;
-  padding: 30px; }
+  font-size: 3.2em; }
 
 #parrafoReceta {
   font-size: 1.5em;
   font-family: Poppins;
-  text-align: center;
-  padding: 5%; }
+  text-align: center; }
 
-/* Card recetas saladas */
-.card {
+/* Card recetas */
+.cardRecetas {
   display: flex;
   flex-direction: row;
-  gap: 4rem;
-  justify-content: space-around;
-  border: none;
-  margin: 0.1em;
-  padding-left: 1em;
-  margin-top: 1%;
-  height: 100%;
-  font-size: 1.5em; }
-  .card .divBox {
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-top: 5%; }
+  .cardRecetas .boxRecetas {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    font-size: 1em;
-    width: 25%; }
-  .card .boxReceta__info {
-    display: flex;
-    gap: 10px;
     flex-direction: column;
-    padding: 25px; }
-  .card .boxReceta__img {
-    gap: 8rem; }
-  .card .boxReceta__subtitle, .card .boxReceta__subtitle--budines {
-    font-family: Arial, Helvetica, sans-serif;
-    color: purple; }
-  .card .boxReceta__link {
-    color: purple;
-    text-decoration: none;
-    font-size: 1em; }
-  .card .boxReceta__item {
-    text-decoration: none;
-    font-size: 1em;
-    color: darkslategrey; }
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    border-radius: 21px;
+    border: 1px solid #353333;
+    box-shadow: 0 0 30px cornflowerblue;
+    transition: all 0.3s linear; }
+    .cardRecetas .boxRecetas .boxRecetas__img {
+      height: 100%;
+      width: 100%;
+      padding: 3%; }
+    .cardRecetas .boxRecetas .boxRecetas__title {
+      color: #817f7f;
+      font-size: 2.2em;
+      font-family: Hallelujah;
+      margin: 4%; }
+    .cardRecetas .boxRecetas .boxRecetas__text {
+      font-size: 1em;
+      font-family: Poppins;
+      color: #817f7f;
+      margin: 4%; }
+    .cardRecetas .boxRecetas .boxRecetas__boton {
+      color: cornflowerblue; }
 
-.imgBox {
-  transition: all 0.3s linear; }
-
-.imgBox:hover {
+.boxRecetas:hover {
   transform: scale(1.1, 1.1);
   box-shadow: 0px 0px 10px cadetblue; }
 
-.boxReceta__item {
-  transition: all 0.3s linear; }
-
-.boxReceta__item:hover {
-  color: purple; }
-
-/* RECETAS */
-@media screen and (max-width: 480px) {
-  .divBox {
+/* Media querys */
+@media screen and (max-width: 320px) {
+  .boxRecetas {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%; } }
+    align-items: center; } }
+
+@media screen and (max-width: 480px) {
+  .cardRecetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5%; }
+    .cardRecetas .boxRecetas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 21px;
+      border: 1px solid #353333;
+      box-shadow: 0 0 30px cornflowerblue; }
+    .cardRecetas .boxRecetas__title {
+      font-size: 1.5em;
+      margin: 0; } }
 
 /* CONTACTO */
 .budines {

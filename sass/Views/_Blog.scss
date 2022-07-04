@@ -16,6 +16,21 @@
     padding: 30px;
 }
 
+.budines2 {
+
+    color: map-get($colors, secondary);
+
+    text-align: center;
+
+    font-size: $text-Medium;
+
+    height: 10px;
+
+    padding: 30px;
+
+
+}
+
 
 
 #parrafoProp {
@@ -32,21 +47,44 @@
 
 /* CARDS BLOG */
 
+.articulos {
+
+    background-image: url(../IMG/fondo-acuarela-pintada-mano_24972-1198.webp); }
+
+
+
 .cardBlog {
 
-.col-md-4 {
+    
+
+.col-md-3 {
+
+    
 
 .card2 {
 
+    border-radius: 21px;
+
+    border: 1px solid map-get($colors, ul);
+
     width: 50%;
 
-    margin: 25%;
-
-    margin-top: 5%; 
+    height: 50%;
 
     transition: all 0.3s linear; } 
 
+
+    .card-img-top {
+
+        width: 40%;
+        height: 40% ;
+    }
+
     .card-body {
+
+        margin: 15%;
+
+        margin-top: 5%; }
 
     .card-text { 
 
@@ -54,10 +92,10 @@
         font-size: $text-Small;
         color: map-get($colors, ul );
 
+ }
 
 
-
-    } } } }
+} } 
 
 
 .card2:hover {

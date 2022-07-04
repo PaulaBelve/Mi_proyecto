@@ -11,6 +11,7 @@
 
 }
 
+
 img {
 
     width: 100%;
@@ -30,11 +31,11 @@ body {
 
 }
 
-/*main {
+.mainInicio {
 
-     margin: auto;
+     margin: 50%;
 
-   max-width: 1200px; }*/
+   max-width: 1200px; }
 
 
 /* Estilos h2 */
@@ -55,7 +56,7 @@ h2 {
     font-family: $font-Principal;
 
     
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
@@ -67,8 +68,7 @@ h1 {
     color: map-get($colors, primary);
 
     font-size: 1.5em;
-
-
+    
     font-family: $font-Principal;
 }
 
