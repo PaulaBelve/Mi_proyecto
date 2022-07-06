@@ -3,9 +3,7 @@
 footer {
 
 
-    background-image: url(../IMG/hojitas.png);
-
-    color: map-get($colors, text);
+   background-color: map-get($colors, ul);
 
     margin-top: 10%;
 
@@ -26,6 +24,9 @@ footer {
 
 .divFooter {
 
+    
+    color: map-get($colors, ul);
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -34,8 +35,8 @@ footer {
 
 
    & .iconos {
-
-        gap: 0.1em;
+        
+        gap: 1rem;
         height: 25px;
         width: 25px;
     } }
@@ -43,14 +44,14 @@ footer {
 
     .finFooter {
 
+        
+        color: map-get($colors, ul);
+
         font-size: 0.7em;
         margin-top: 8%;
         align-items: center;
         
     } }
-
-
-
 
 /* Media query */
 

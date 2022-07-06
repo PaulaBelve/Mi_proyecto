@@ -69,12 +69,13 @@ h4 {
 /*Estilos h5*/
 .h5,
 h5 {
-  color: purple;
-  font-size: 1.25em; }
+  color: #353333;
+  font-size: 2.2em;
+  font-family: Poppins; }
 
 /* Estilos parrafos */
 p {
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: Poppins;
   color: darkslategrey; }
 
@@ -204,8 +205,7 @@ header {
 
 /* Footer */
 footer {
-  background-image: url(../IMG/hojitas.png);
-  color: darkslategrey;
+  background-color: #353333;
   margin-top: 10%;
   height: 100%;
   width: 100%;
@@ -216,16 +216,18 @@ footer {
   font-size: 1.5em;
   font-family: Poppins; }
   footer .divFooter {
+    color: #353333;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1rem;
     margin-right: 5%; }
     footer .divFooter .iconos {
-      gap: 0.1em;
+      gap: 1rem;
       height: 25px;
       width: 25px; }
   footer .finFooter {
+    color: #353333;
     font-size: 0.7em;
     margin-top: 8%;
     align-items: center; }
@@ -250,27 +252,30 @@ footer {
 
 /* Views */
 /* Main */
+.container
 .textosInicio .proposito {
   color: cornflowerblue;
   text-align: center;
   font-size: 3.2em;
-  height: 10px;
-  padding: 30px; }
+  padding: 15px; }
 
+.container
 .textosInicio #parrafoProp {
   font-size: 1.5em;
   color: cornflowerblue;
-  text-align: justify;
+  text-align: center;
   padding: 5%; }
 
+.container
 .textosInicio .parrafo2 {
   display: flex;
+  padding: 5%;
   flex-direction: row;
   font-size: 1.5em;
-  padding: 25px;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 3rem; }
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 2rem; }
 
 /* Enlace directo-budines */
 .enlaceRecetas {
@@ -308,10 +313,21 @@ footer {
 
 /* Media Query */
 @media screen and (max-width: 480px) {
+  .proposito {
+    color: cornflowerblue;
+    text-align: center;
+    padding: 6px; }
   .parrafo2 {
     flex-direction: column;
     align-items: center;
-    justify-content: center; } }
+    justify-content: center; }
+  .nuestrosBudines {
+    color: #817f7f;
+    text-align: center;
+    font-size: 3.2em;
+    padding: 5px; }
+  .card1 {
+    margin-top: 20px; } }
 
 /* ESTILOS BLOG */
 /* TITULO Y PARRAFO */
@@ -336,25 +352,13 @@ footer {
   padding: 5%; }
 
 /* CARDS BLOG */
-.articulos {
-  background-image: url(../IMG/fondo-acuarela-pintada-mano_24972-1198.webp); }
-
-.cardBlog .col-md-3 .card2 {
-  border-radius: 21px;
-  border: 1px solid #353333;
-  width: 50%;
-  height: 50%;
+.cardBlog .col-md-4 .card2 {
   transition: all 0.3s linear; }
 
-.cardBlog .col-md-3 .card-img-top {
-  width: 40%;
-  height: 40%; }
+.cardBlog .col-md-4 .card-title {
+  color: #817f7f; }
 
-.cardBlog .col-md-3 .card-body {
-  margin: 15%;
-  margin-top: 5%; }
-
-.cardBlog .col-md-3 .card-text {
+.cardBlog .col-md-4 .card-text {
   font-family: Poppins;
   font-size: 1em;
   color: #353333; }
@@ -380,7 +384,7 @@ footer {
 #parrafoProp {
   font-size: 1.5em;
   font-family: Poppins;
-  text-align: center; }
+  text-align: justify; }
 
 /*Carrousel*/
 .carousel-inner {
@@ -394,7 +398,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   gap: 6rem;
-  margin-top: 8%;
+  margin-top: 10%;
   font-size: 1.5em; }
   .cardBudines .divBudines {
     display: flex;
@@ -405,21 +409,25 @@ footer {
   .cardBudines .boxBudines {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 60%;
     border-radius: 21px;
     border: 1px solid #353333;
-    box-shadow: 0 0 30px cornflowerblue;
+    box-shadow: 0 0 25px cornflowerblue;
     transition: all 0.3s linear; }
+    .cardBudines .boxBudines .boxBudines__subtitle {
+      margin: 8%; }
 
 .boxBudines:hover {
   transform: scale(1.1, 1.1);
-  box-shadow: 0px 0px 10px cadetblue; }
+  box-shadow: 0px 0px 5px cadetblue; }
 
 /* MEDIA QUERY */
 @media screen and (max-width: 480px) {
   #parrafoProp {
-    margin: 10px; }
+    font-size: 2em;
+    margin: 5px;
+    text-align: center; }
   .ingredientes {
     flex-direction: column;
     justify-content: center;
@@ -432,10 +440,6 @@ footer {
   align-items: center;
   gap: 6rem;
   font-size: 1em; }
-  .cardBudines .divRecetas {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
 
 /* TITULO Y TEXTO */
 .container

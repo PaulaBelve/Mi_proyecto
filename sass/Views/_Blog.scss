@@ -47,55 +47,44 @@
 
 /* CARDS BLOG */
 
-.articulos {
-
-    background-image: url(../IMG/fondo-acuarela-pintada-mano_24972-1198.webp); }
-
 
 
 .cardBlog {
 
     
 
-.col-md-3 {
+.col-md-4 {
 
     
 
 .card2 {
+    
 
-    border-radius: 21px;
-
-    border: 1px solid map-get($colors, ul);
-
-    width: 50%;
-
-    height: 50%;
-
-    transition: all 0.3s linear; } 
+    transition: all 0.3s linear;
 
 
-    .card-img-top {
+} 
+ & .card-img-top {
 
-        width: 40%;
-        height: 40% ;
+        
+       
     }
 
-    .card-body {
+    & .card-title {
 
-        margin: 15%;
+        color: map-get($colors, secondary);
 
-        margin-top: 5%; }
 
-    .card-text { 
+    }
+
+   & .card-text { 
 
         font-family: $font-Principal;
         font-size: $text-Small;
-        color: map-get($colors, ul );
+        color: map-get($colors, ul);
+        
 
- }
-
-
-} } 
+ } } } 
 
 
 .card2:hover {
