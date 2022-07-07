@@ -7,8 +7,6 @@ header {
     width: 100%;
 }
 
-
-
 .divHeader {
     
     height: 100px;
@@ -65,7 +63,7 @@ header {
 
     & .menu__item {
 
-        font-size: $text-Base;
+        font-size: $text-title;
         margin: 0 10px;
     }
 
@@ -78,41 +76,18 @@ header {
 
     & .menu__link:hover {
 
-        border-bottom: 2px solid violet;
+        border-bottom: 2px solid cornflowerblue;
 
     } } } }
     
 /* Banners */
 
-  .Banner {
+.baner { 
 
     
-    position: relative;
-    width: 100%;
-    height: 100%;
     margin-top: 8%;
-
-    & .Banner__img {
-
-        width: 100%; 
-        margin-top: 5%;
-     }
-   
-
     
-     & .Banner__Inicio {
-
-        position: absolute;
-        margin: 50px;
-        top: 25px;
-        left: 30%;
-        margin-top: 50px;
-        font-family: $font-Title;
-        color: map-get($colors, base);
-        font-size: $text-Large; 
-    } }
-
-
+ }
 
 /* Media Query */
 
@@ -125,7 +100,7 @@ header {
 
     .divHeader {
 
-        & .navHeader {
+       & .navHeader {
 
        & .navBoton {
 
@@ -169,41 +144,12 @@ header {
                     
                     color: grey;
                     border-bottom: solid 2px gray;
-                    font-size: 1.2em;
+                    font-size: $text-Base;
                     display: block; } } } } }
                    
                    
-   .Banner { 
+    
 
-   .Banner__img {
 
-        margin: 5px;
-        top: 13px;
-        
-   }
 
-   .Banner__Inicio {
-
-    margin-top: 30px;
-
-       font-size: $text-title;
-
-   }
-} 
-
-@media screen and (max-width: 768px) {
-
-    .Banner {
-
-    .Banner__img {
-      
-        right: 5px;
-        top: 13px;
-          }
- 
- 
-         .Banner__Inicio {
-
-         font-size: $text-title;
-         }
-     } }
+    

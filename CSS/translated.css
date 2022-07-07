@@ -10,7 +10,7 @@
   color: cornflowerblue; }
 
 .color {
-  color: #817f7f; }
+  color: #5F7052; }
 
 .color {
   color: darkslategrey; }
@@ -75,7 +75,7 @@ h5 {
 
 /* Estilos parrafos */
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: Poppins;
   color: darkslategrey; }
 
@@ -123,33 +123,18 @@ header {
       align-items: center;
       list-style: none; }
       .divHeader .navHeader .MENU .menu__item {
-        font-size: 1.5em;
+        font-size: 2em;
         margin: 0 10px; }
       .divHeader .navHeader .MENU .menu__link {
         text-decoration: none;
         color: #353333;
         transition: all .3s linear; }
       .divHeader .navHeader .MENU .menu__link:hover {
-        border-bottom: 2px solid violet; }
+        border-bottom: 2px solid cornflowerblue; }
 
 /* Banners */
-.Banner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.baner {
   margin-top: 8%; }
-  .Banner .Banner__img {
-    width: 100%;
-    margin-top: 5%; }
-  .Banner .Banner__Inicio {
-    position: absolute;
-    margin: 50px;
-    top: 25px;
-    left: 30%;
-    margin-top: 50px;
-    font-family: Poppins;
-    color: white;
-    font-size: 5em; }
 
 /* Media Query */
 @media screen and (max-width: 480px) {
@@ -188,21 +173,6 @@ header {
       font-size: 1.2em;
       display: block; } }
 
-.Banner .Banner__img {
-  margin: 5px;
-  top: 13px; }
-
-.Banner .Banner__Inicio {
-  margin-top: 30px;
-  font-size: 2.2em; }
-
-@media screen and (max-width: 768px) {
-  .Banner .Banner__img {
-    right: 5px;
-    top: 13px; }
-  .Banner .Banner__Inicio {
-    font-size: 2.2em; } }
-
 /* Footer */
 footer {
   background-color: #353333;
@@ -213,7 +183,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: Poppins; }
   footer .divFooter {
     color: #353333;
@@ -257,11 +227,11 @@ footer {
   color: cornflowerblue;
   text-align: center;
   font-size: 3.2em;
-  padding: 15px; }
+  padding: 0; }
 
 .container
-.textosInicio #parrafoProp {
-  font-size: 1.5em;
+.textosInicio #parrafoInicio {
+  font-size: 2em;
   color: cornflowerblue;
   text-align: center;
   padding: 5%; }
@@ -269,12 +239,11 @@ footer {
 .container
 .textosInicio .parrafo2 {
   display: flex;
-  padding: 5%;
   flex-direction: row;
-  font-size: 1.5em;
+  font-size: 1.2em;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center;
+  text-align: justify;
   gap: 2rem; }
 
 /* Enlace directo-budines */
@@ -282,19 +251,19 @@ footer {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 65%;
+  height: 70%;
+  margin-top: 5%;
   background-image: url(../IMG/fondo-acuarela-pintada-mano_24972-1198.webp); }
 
 .nuestrosBudines {
-  color: #817f7f;
+  color: #5F7052;
   text-align: center;
   font-size: 3.2em;
-  height: 10px;
-  padding: 30px;
-  margin-top: 5%; }
+  padding: 5%; }
 
 .card1 {
-  margin-top: 5%;
+  margin-top: 2%;
+  margin: 8%;
   border-radius: 21px;
   flex-direction: row;
   transition: all 0.3s linear; }
@@ -302,9 +271,8 @@ footer {
     width: 100%;
     border-radius: 21px; }
   .card1 .card1-title {
-    color: #817f7f;
+    color: #5F7052;
     margin-top: 4%;
-    margin: 5%;
     font-size: 2em;
     font-family: Hallelujah; }
   .card1 img:hover {
@@ -315,19 +283,18 @@ footer {
 @media screen and (max-width: 480px) {
   .proposito {
     color: cornflowerblue;
-    text-align: center;
-    padding: 6px; }
+    text-align: center; }
   .parrafo2 {
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
   .nuestrosBudines {
-    color: #817f7f;
+    color: #5F7052;
     text-align: center;
-    font-size: 3.2em;
-    padding: 5px; }
+    font-size: 3.2em; }
   .card1 {
-    margin-top: 20px; } }
+    flex-direction: center; } }
 
 /* ESTILOS BLOG */
 /* TITULO Y PARRAFO */
@@ -339,14 +306,14 @@ footer {
   padding: 30px; }
 
 .budines2 {
-  color: #817f7f;
+  color: #5F7052;
   text-align: center;
   font-size: 3.2em;
   height: 10px;
   padding: 30px; }
 
 #parrafoProp {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: Poppins;
   text-align: justify;
   padding: 5%; }
@@ -356,7 +323,7 @@ footer {
   transition: all 0.3s linear; }
 
 .cardBlog .col-md-4 .card-title {
-  color: #817f7f; }
+  color: #5F7052; }
 
 .cardBlog .col-md-4 .card-text {
   font-family: Poppins;
@@ -382,7 +349,7 @@ footer {
   margin-top: 5%; }
 
 #parrafoProp {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: Poppins;
   text-align: justify; }
 
@@ -449,7 +416,7 @@ footer {
   font-size: 3.2em; }
 
 #parrafoReceta {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: Poppins;
   text-align: center; }
 
@@ -475,21 +442,21 @@ footer {
       width: 100%;
       padding: 3%; }
     .cardRecetas .boxRecetas .boxRecetas__title {
-      color: #817f7f;
-      font-size: 2.2em;
+      color: #5F7052;
+      font-size: 2em;
       font-family: Hallelujah;
       margin: 4%; }
     .cardRecetas .boxRecetas .boxRecetas__text {
       font-size: 1em;
       font-family: Poppins;
-      color: #817f7f;
+      color: #5F7052;
       margin: 4%; }
     .cardRecetas .boxRecetas .boxRecetas__boton {
       color: cornflowerblue; }
 
 .boxRecetas:hover {
   transform: scale(1.1, 1.1);
-  box-shadow: 0px 0px 10px cadetblue; }
+  box-shadow: 0px 0px 5% cadetblue; }
 
 /* Media querys */
 @media screen and (max-width: 320px) {
@@ -516,7 +483,7 @@ footer {
       border: 1px solid #353333;
       box-shadow: 0 0 30px cornflowerblue; }
     .cardRecetas .boxRecetas__title {
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin: 0; } }
 
 /* CONTACTO */
