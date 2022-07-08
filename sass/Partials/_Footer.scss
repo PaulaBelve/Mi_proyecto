@@ -2,8 +2,9 @@
 
 footer {
 
-
-   background-color: map-get($colors, ul);
+    background-color: map-get($colors, ul);
+    
+    color: white;
 
     margin-top: 10%;
 
@@ -44,14 +45,12 @@ footer {
 
     .finFooter {
 
-        
-        color: map-get($colors, ul);
 
         font-size: 0.7em;
-        margin-top: 8%;
+        margin-top: 3%;
         align-items: center;
         
-    } }
+    } } 
 
 /* Media query */
 

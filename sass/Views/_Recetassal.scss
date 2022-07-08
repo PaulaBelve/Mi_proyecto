@@ -10,6 +10,8 @@
         text-align: center;
     
         font-size: $text-Medium;
+
+        margin-top: 5%;
   
 }
 
@@ -32,18 +34,16 @@
     display: flex;
     flex-direction: row ;
     justify-content: space-evenly;
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 5%;
     
-
-
 .boxRecetas {
 
     display: flex;
     flex-direction: column;
     justify-content: center ;
     height: 100%;
-    width: 40%;
+    width: 100%;
     border-radius: 21px;
     border: 1px solid map-get($colors, ul);
     box-shadow: 0 0 30px map-get($colors, primary) ;
@@ -120,7 +120,7 @@
         align-items: center;
         border-radius: 21px;
         border: 1px solid map-get($colors, ul);
-        box-shadow: 0 0 30px map-get($colors, primary) ;
+        box-shadow: 0 0 10px map-get($colors, ul) ;
    } 
 
    & .boxRecetas__title {
