@@ -17,7 +17,7 @@
 
 #parrafoReceta {
     
-    font-size: $text-Base;
+    font-size: $text-title;
 
     font-family: $font-Principal;
 
@@ -101,6 +101,17 @@
        } } 
 
 @media screen and (max-width: 480px) {
+
+    #parrafoReceta {
+    
+        font-size: 1.5rem;
+    
+        font-family: $font-Principal;
+    
+        text-align: center;
+    
+        
+    }
 
     .cardRecetas {
 

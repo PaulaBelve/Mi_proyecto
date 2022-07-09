@@ -1,79 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delfos cocina -Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/translated.css">
+<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="../CSS/translated.css">
 
-    <script src="https://kit.fontawesome.com/3beba61247.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3beba61247.js" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Brindar información y meterial nutricional gratuita">
-    <meta name="keywords" content="Contacto, consultas, newsleter, información, material">
+<meta name="description" content="Brindar información, pedidos, meterial nutricional gratuita">
+<meta name="keywords" content="Contacto, consultas, newsleter, información, material">
 
-    
+
 </head>
+
 <body>
-       <!-- HEADER DE LA PAGINA -->
-   
-       <!-- fila del logo + enlaces -->
-   
-       <header>
+    <!-- HEADER DE LA PAGINA -->
+
+    <!-- fila del logo + enlaces -->
+
+    <header>
         <div class="divHeader">
             <nav class="navHeader">
-              
                 <img class="logo" src="../IMG/DELFOS (3).png" alt="logo">
-
-               <label class="navBoton" for="hamburguesa"><i class="fas fa-bars"></i></label>
-
-               <input type="checkbox" name="hamburguesa" id="hamburguesa">
-
-
+                <label class="navBoton" for="hamburguesa"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" name="hamburguesa" id="hamburguesa">
                 <ul class="MENU">
-
-                    <li class="menu__item">
-
-                        <a class="menu__link" href="../index.html">INICIO</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="./Blog2.html">SOBRE MI</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="./RecetasDul3.html">BUDINES</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="./RecetasSal4.html">RECETAS</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="./Contacto5.html">CONTACTO</a>
-                    </li>
-
-
-                </ul>
+                <li class="menu__item"><a class="menu__link" href="../index.html">INICIO</a></li>
+                <li class="menu__item"><a class="menu__link" href="./Blog2.html">NOSOTROS</a></li>
+                <li class="menu__item"><a class="menu__link" href="./RecetasDul3.html">BUDINES</a></li>
+                <li class="menu__item"><a class="menu__link" href="./RecetasSal4.html">RECETAS</a></li>
+                <li class="menu__item"><a class="menu__link" href="./Contacto5.html">CONTACTO</a></li>
+            </ul>
             </nav>
         </div>
-       
 
-     <!-- BANNER -->
 
-     <div class="baner">
+        <!-- BANNER -->
 
-     <img class="baner_img" src="../IMG/Contacto.png" alt="">
+        <div class="baner">
 
-    </div>
+            <img class="baner_img" src="../IMG/Contacto.png" alt="">
 
-   
-    
-</header>
+        </div>
+
+
+
+    </header>
     <!-- FIN DEL HEADER -->
 
     <!-- Formulario de contacto -->
@@ -82,65 +61,70 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 
     <main class="container">
 
-    <h1 class="budines" class="mt-5"> CONSULTAS: </h1>
+        <h1 class="budines" class="mt-5"> CONTACTO </h1>
 
-    <form class="container mt-5">
-        <div class="mb-3">
-          <label for="exampleInputName" class="form-label">Nombre</label>
-          <input type="Name" class="form-control" id="exampleInputName" aria-describedby="Nombre">
+        <p id="parrafoProp">Para mas información, mandanos tu consulta y estaremos respondiendo a la brevedad con toda la info para que puedas hacer tu pedido.</p>
+
+        <div class="contacto">
+        <form class="containerContacto mt-4">
+            <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Nombre</label>
+                <input type="Name" class="form-control" id="exampleInputName" aria-describedby="Nombre">
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1">
+                </div>
+                <textarea placeholder="Dejanos tu consulta" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </form>
+
+            <p>Gracias por elegirnos!</p>
+            </div>
+
         
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-secondary">Enviar</button>
-      </form>
 
+    </main>
+
+    <!-- FIN DEL MAIN -->
+
+    <!-- INICIO DEL FOOTER -->
+
+    <footer class="container-fluid">
+
+        <div class="divFooter">
+
+            <p><b>+ info:</b></p>
+            <p> <img class="iconos" src="../IMG/gmail.png" alt=""> Delfoscocina@gmail.com</p>
+
+
+            <p><b>Redes</b></p>
+
+            <p><a href=https://www.instagram.com/direct/inbox/?hles-la> <img class="iconos"
+                        src="../IMG/instagram (1).png" alt=""></a></p>
+            <p><a href=https://www.facebook.com> <img class="iconos" src="../IMG/facebook.png" alt=""></a> </p>
+
+        </div>
+
+
+
+
+        <section class="finFooter">
+
+            <p> Recetas hechas con Amor </p>
+            <p>2022 © Delfos, cocina saludable.</p>
         
-</form>
+        </section>
 
-</main>
-
-<!-- FIN DEL MAIN -->
-
-<!-- INICIO DEL FOOTER -->    
-
-<footer class="container-fluid">
-
-    <div class="divFooter">
-
-    <p><b>+ info:</b></p>
-    <p> <img class="iconos" src="../IMG/gmail.png" alt=""> Delfoscocina@gmail.com</p>
-
-
-    <p><b>Redes</b></p>
-
-    <p><a href= https://www.instagram.com/direct/inbox/?hles-la> <img class="iconos" src="../IMG/instagram (1).png" alt=""></a></p>
-    <p><a href= https://www.facebook.com> <img class="iconos" src="../IMG/facebook.png" alt=""></a> </p>
-
-    </div>
-
-
-
-
-<section class="finFooter">
-
-<p> Recetas hechas con Amor </p>
-<p>By Delfos, cocina saludable</p>
-</section> 
-
-</footer>
+    </footer>
 
     <!-- FIN DEL FOOTER -->
 
-       <!-- JavaScript Bundle with Popper -->
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-       crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

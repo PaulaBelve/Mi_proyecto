@@ -168,13 +168,12 @@ header {
     .divHeader .navHeader .MENU .menu__item {
       color: grey;
       border-bottom: solid 2px gray;
-      font-size: 1.2em;
+      font-size: 2em;
       display: block; } }
 
 /* Footer */
 footer {
   background-color: #353333;
-  color: white;
   margin-top: 10%;
   height: 100%;
   width: 100%;
@@ -185,12 +184,13 @@ footer {
   font-size: 1.2em;
   font-family: Poppins; }
   footer .divFooter {
-    color: #353333;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1rem;
     margin-right: 5%; }
+    footer .divFooter p {
+      color: white; }
     footer .divFooter .iconos {
       gap: 1rem;
       height: 25px;
@@ -199,6 +199,8 @@ footer {
     font-size: 0.7em;
     margin-top: 3%;
     align-items: center; }
+    footer .finFooter p {
+      color: white; }
 
 /* Media query */
 @media screen and (max-width: 480px) {
@@ -215,8 +217,8 @@ footer {
       align-items: center;
       margin-right: 0; }
     footer .iconos {
-      height: 20px;
-      width: 20px; } }
+      height: 10px;
+      width: 10px; } }
 
 /* Views */
 /* Main */
@@ -269,7 +271,8 @@ footer {
     color: #5F7052;
     margin: 4%;
     font-size: 2em;
-    font-family: Hallelujah; }
+    font-family: Hallelujah;
+    text-align: center; }
   .card1 img:hover {
     transform: scale(1.1, 1.1);
     box-shadow: 0px 0px 10px cadetblue; }
@@ -310,27 +313,15 @@ footer {
   height: 10px;
   padding: 30px; }
 
-#parrafoProp {
-  font-size: 1.2em;
+#parrafoNosotros {
+  font-size: 2em;
   font-family: Poppins;
   text-align: justify;
   padding: 5%; }
 
-/* CARDS BLOG */
-.cardBlog .col-md-4 .card2 {
-  transition: all 0.3s linear; }
-
-.cardBlog .col-md-4 .card-title {
-  color: #5F7052; }
-
-.cardBlog .col-md-4 .card-text {
-  font-family: Poppins;
-  font-size: 1em;
-  color: #353333; }
-
-.card2:hover {
-  transform: scale(1.1, 1.1);
-  box-shadow: 0px 0px 10px cadetblue; }
+@media screen and (max-width: 480px) {
+  #parrafoNosotros {
+    font-size: 1.5em; } }
 
 /* TITULO */
 .budines {
@@ -355,14 +346,16 @@ footer {
 .carousel-inner {
   width: 100%;
   height: 100%; }
+  .carousel-inner .carousel-item img {
+    width: 50rem; }
 
-/* Card recetas dulces */
+/* Card budines */
 .cardBudines {
   /* @include flex (row, space-between, center, 5rem); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 8rem;
   margin-top: 8%;
   font-size: 1.5em; }
   .cardBudines .divBudines {
@@ -370,8 +363,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
-    row-gap: 5rem; }
+    gap: 6rem;
+    row-gap: 4rem; }
   .cardBudines .boxBudines {
     display: flex;
     flex-direction: column;
@@ -399,11 +392,11 @@ footer {
       font-size: 1.5em;
       text-align: justify;
       font-family: Poppins;
-      margin: 2%; }
+      margin: 2rem 2rem 2rem 2rem; }
 
 .boxBudines:hover {
   transform: scale(1.1, 1.1);
-  box-shadow: 0px 0px 5px cadetblue; }
+  box-shadow: 0px 0px 2px cadetblue; }
 
 /* MEDIA QUERY */
 @media screen and (max-width: 480px) {
@@ -414,15 +407,20 @@ footer {
   .ingredientes {
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
-
-.cardBudines {
-  /*   @include flex (column, center, center, 2rem); */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem; }
+    align-items: center; }
+  .carousel-inner {
+    width: 100%;
+    height: 100%; }
+    .carousel-inner .carousel-item img {
+      width: 30rem; }
+  .cardBudines {
+    /*  @include flex (column, center, center, 2rem); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin: 5rem 1rem 0 1rem; } }
 
 /* TITULO Y TEXTO */
 .container
@@ -433,7 +431,7 @@ footer {
   margin-top: 5%; }
 
 #parrafoReceta {
-  font-size: 1.2em;
+  font-size: 2em;
   font-family: Poppins;
   text-align: center; }
 
@@ -484,6 +482,10 @@ footer {
     align-items: center; } }
 
 @media screen and (max-width: 480px) {
+  #parrafoReceta {
+    font-size: 1.5rem;
+    font-family: Poppins;
+    text-align: center; }
   .cardRecetas {
     display: flex;
     flex-direction: column;
@@ -507,8 +509,38 @@ footer {
 .budines {
   color: cornflowerblue;
   text-align: center;
-  font-size: 3.2em;
-  height: 10px;
-  padding: 30px; }
+  font-size: 3.2em; }
+
+#parrafoProp {
+  padding: 5%; }
 
 /* FORMULARIO */
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form-label {
+  font-family: Poppins;
+  margin-top: 1rem;
+  font-size: 1.2em; }
+
+.form-control {
+  width: 50rem; }
+
+.btn {
+  margin-top: 2rem;
+  color: white;
+  background-color: cornflowerblue;
+  font-family: Poppins;
+  font-size: 1.2em;
+  border-radius: 1%;
+  border: solid 1px cornflowerblue;
+  margin: 2rem; }
+
+@media screen and (max-width: 480px) {
+  .form-control {
+    width: 20rem; }
+  #parrafoProp {
+    font-size: 1.5em; } }

@@ -8,12 +8,68 @@
     text-align: center;
 
     font-size: $text-Medium;
-
-    height: 10px;
-
-    padding: 30px;
 }
 
+#parrafoProp {
+
+    padding: 5%;
+}
+
+
+
 /* FORMULARIO */
+
+
+.mb-3 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+
+    font-family: $font-Principal;
+    margin-top: 1rem;
+    font-size: $text-Base;
+}
+
+.form-control {
+   
+    width: 50rem;
+
+}
+
+.btn {
+
+    margin-top: 2rem;
+    color: map-get($colors, base);
+    background-color: map-get($colors, primary);
+    font-family: $font-Principal;
+    font-size: $text-Base;
+    border-radius: 1%;
+    border: solid 1px map-get($colors, primary);
+    margin: 2rem;
+    
+    
+    
+}
+
+@media screen and (max-width: 480px) {
+
+
+.form-control {
+   
+    width: 20rem;
+
+} 
+ #parrafoProp {
+
+    font-size: 1.5em;
+ }
+
+}
+
 
 

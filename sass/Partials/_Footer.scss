@@ -4,8 +4,6 @@ footer {
 
     background-color: map-get($colors, ul);
     
-    color: white;
-
     margin-top: 10%;
 
     height: 100%;
@@ -25,14 +23,14 @@ footer {
 
 .divFooter {
 
-    
-    color: map-get($colors, ul);
-
+   
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1rem;
     margin-right: 5%;
+
+   & p {  color: map-get($colors, base); }
 
 
    & .iconos {
@@ -45,12 +43,11 @@ footer {
 
     .finFooter {
 
-
         font-size: 0.7em;
         margin-top: 3%;
         align-items: center;
         
-    } } 
+    p {  color: map-get($colors, base);} } }
 
 /* Media query */
 
@@ -76,8 +73,8 @@ footer {
         
   .iconos {
 
-        height: 20px;
-        width: 20px;
+        height: 10px;
+        width: 10px;
 
     
     } }
