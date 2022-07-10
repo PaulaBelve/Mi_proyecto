@@ -154,17 +154,18 @@ header {
     z-index: 0; }
   .divHeader .navHeader #hamburguesa:checked ~ ul {
     height: 200px;
-    transition: heigth 1s; }
+    transition: width 2s, height 2s, transform 2s; }
   .divHeader .navHeader .MENU {
     position: absolute;
     flex-flow: column;
     height: 0%;
+    width: 35%;
     right: 10px;
     top: 110px;
     background-color: white;
     overflow: hidden;
     z-index: 5;
-    transition: heigth 1s; }
+    transition: width 1s, height 1s, transform 1s; }
     .divHeader .navHeader .MENU .menu__item {
       color: grey;
       border-bottom: solid 2px gray;
@@ -232,6 +233,8 @@ footer {
 .container
 .textosInicio #parrafoProp {
   font-size: 2em;
+  opacity: 0.6;
+  box-shadow: 0 0 10px cornflowerblue;
   background-color: cornflowerblue;
   color: white;
   text-align: center;
@@ -351,18 +354,18 @@ footer {
 
 /* Card budines */
 .cardBudines {
-  /* @include flex (row, space-between, center, 5rem); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 8rem;
   margin-top: 8%;
   font-size: 1.5em; }
   .cardBudines .divBudines {
-    /*  @include flex (row, space-between, center, 5rem); */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 6rem;
     row-gap: 4rem; }
   .cardBudines .boxBudines {
@@ -414,11 +417,11 @@ footer {
     .carousel-inner .carousel-item img {
       width: 30rem; }
   .cardBudines {
-    /*  @include flex (column, center, center, 2rem); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     font-size: 1em;
     margin: 5rem 1rem 0 1rem; } }
 

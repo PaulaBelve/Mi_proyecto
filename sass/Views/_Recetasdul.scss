@@ -51,24 +51,17 @@
 
 .cardBudines {
 
-    /* @include flex (row, space-between, center, 5rem); */
+    @include flex (row, space-between, center, 8rem); 
    
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-between ;
-    gap: 8rem;
     margin-top: 8%;
     font-size: 1.5em;
     
 
     & .divBudines {
 
-        /*  @include flex (row, space-between, center, 5rem); */
+       @include flex (column, center, center, 6rem); 
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 6rem;
+        
         row-gap: 4rem;
     }
 
@@ -157,12 +150,8 @@
 
     .cardBudines {
 
-        /*  @include flex (column, center, center, 2rem); */
+        @include flex (column, center, center, 2rem);
      
-         display: flex;
-         flex-direction: column ;
-         justify-content: center ;
-         align-items: center;
          font-size: $text-Small;
          margin: 5rem 1rem 0 1rem;
 

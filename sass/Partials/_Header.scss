@@ -124,8 +124,7 @@ header {
            #hamburguesa:checked ~ ul {
 
                height: 200px;
-               
-               transition: heigth 1s;
+               transition: width 2s, height 2s, transform 2s;
            }
 
            .MENU {
@@ -133,12 +132,13 @@ header {
        position: absolute;
        flex-flow: column;
        height: 0%;
+       width: 35%;
        right: 10px;
        top: 110px;
        background-color: white;
        overflow: hidden;
        z-index: 5;
-       transition: heigth 1s ;
+       transition: width 1s, height 1s, transform 1s ;
     
                 & .menu__item {
                     
